@@ -3,15 +3,15 @@
 # This config file contains the config of your webpages
 # You may also want to update /config/webpack.pwa.js in case you want to generate a Progressive Web App
 
-title: Mobile App Landing Page Template
-email: contact@sandoche.com
+title: Loungebird
+email: info@loungebird.app
 description: Free to use static landing page template to showcase your mobile app
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mobileapplandingpage.learn.uno" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#efeeff'
 twitter_username: sandochee
 github_username:  sandoche
-author: Sandoche Adittane
+author: Merrick Sapsford
 logo: assets/images/large-logo.png
 twitter:
   username: sandochee
