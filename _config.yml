@@ -7,7 +7,7 @@ title: Loungebird
 email: info@loungebird.app
 description: Free to use static landing page template to showcase your mobile app
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mobileapplandingpage.learn.uno" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://loungebird.app" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#efeeff'
 twitter_username: loungebird
 author: Merrick Sapsford
