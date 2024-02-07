@@ -7,19 +7,17 @@ permalink: /privacy/
 ## Intro
 We want to be transparent about how your data is used, because that is what we expect from services we use. We appreciate your trust and handle your data with upmost care. By using our services you accept this privacy policy. 
 
- No private information is required to use Loungebird.
+No private information is required to use Loungebird.
 
- ## What We Collect
+## What We Collect
+Loungebird does not collect any data.
+ 
+## Analytics
+The Loungebird app collects anonymous statistics during usage, such as the percentage of users who use a particular feature. This is used to help us improve the app.
 
- Loungebird does not collect any data.
-
- ## Analytics
- The Loungebird app collects anonymous statistics during usage, such as the percentage of users who use a particular feature. This is used to help us improve the app.
-
- This analytics data is completely anonymous at all times.
+This analytics data is completely anonymous at all times.
 
 ## Ads
-
 Loungebird collects nothing for, or related to, advertisements.
 
 ## How information is Used
