@@ -27,9 +27,7 @@ layout: default
   <div class="app__screenshots-wrapper container-desktop">
     <div class="app__screenshots-list">
       {% for screenshot in site.data.app.screenshots %}
-      <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
        <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
-      </a>
       {% endfor %}
     </div>
   </div>
