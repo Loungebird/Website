@@ -10,7 +10,7 @@ We want to be transparent about how your data is used, because that is what we e
 No private information is required to use Loungebird.
 
 ## What We Collect
-Loungebird does not collect any data.
+Loungebird does not collect any personal data.
  
 ## Analytics
 The Loungebird app collects anonymous statistics during usage, such as the percentage of users who use a particular feature. This is used to help us improve the app.
