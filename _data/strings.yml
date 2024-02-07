@@ -1,7 +1,5 @@
 app:
   screenshots: Screenshots
-  description: Description
-  featured: Featured in
 
 footer:
   copyright: Made with ❤️ by <a href="https://www.sapsford.tech" target="_blank">Merrick Sapsford</a>
