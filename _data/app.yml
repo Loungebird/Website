@@ -1,12 +1,13 @@
 name: Loungebird
 description: LHR Lounges at your fingertips. Coming Soon.
-full_description: 'Loungebird is the ultimate companion to experiencing lounges at London Heathrow Terminal 5<br>
-<br>Featuring:
+full_description: 'Loungebird is the ultimate companion to the lounge experience at London Heathrow Terminal 5.<br>
+<br>Featuring:<br>
+<br>- A beautiful, customisable design.
 <br>- Live streaming of occupancy data directly from the lounges.
-<br>- Support for Home and Lock Screen widgets.
-<br>- And much more...
+<br>- Glanceable Home and Lock Screen widgets.
+<br>- And much more planned...
 <br>
-Coming soon to iOS, iPadOS and macOS'
+<br>Coming soon to iPhone, iPad and Mac.'
 #iOS: https://telegra.ph/Replace-this-link-07-23
 screenshots:
   - 1.png
