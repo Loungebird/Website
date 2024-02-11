@@ -215,13 +215,11 @@ h1, h2 {
 
   &__screenshot {
     width: 100%;
-    box-shadow: 0 12px 48px rgba(17,16,62,0.12);
     transition: all .3s ease-in-out;
     transform: scale(1);
     cursor: pointer;
 
     &:hover {
-      box-shadow: 0 24px 48px rgba(17,16,62,0.12);
       transform: scale(1.05);
     }
   }
