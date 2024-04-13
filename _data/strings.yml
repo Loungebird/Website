@@ -2,8 +2,10 @@ app:
   screenshots: Screenshots
 
 footer:
-  copyright: Made with ❤️ by <a href="https://www.sapsford.tech" target="_blank">Merrick Sapsford</a>
+  copyright: Made by <a href="https://www.sapsford.tech" target="_blank">Merrick Sapsford</a>
   links:
+    - title: Disclaimer
+      url: /disclaimer
     - title: Privacy
       url: /privacy
     - title: Terms of Use

@@ -5,10 +5,10 @@
 
 title: Loungebird
 email: info@loungebird.app
-description: LHR Lounges at your fingertips - Coming Soon
+description: LHR Lounges at your fingertips
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://loungebird.app" # the base hostname & protocol for your site, e.g. http://example.com
-theme_color: '#efeeff'
+theme_color: '#193970'
 twitter_username: loungebird
 author: Merrick Sapsford
 logo: assets/images/large-logo.png

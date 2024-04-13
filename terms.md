@@ -11,7 +11,7 @@ Supplemental terms and conditions or documents that may be posted on the Applica
 The information provided on the Application is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Application from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.
 
 ## Affiliation Disclaimer
-Loungebird is not affiliated, associated, endorsed by, or in any way offially connected with British Airways, any of its subsidiaries or its affiliates.
+Loungebird is not affiliated, associated, endorsed by, or in any way officially connected with British Airways, any of its subsidiaries or its affiliates. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder of their product brand.
 
 ## New Features and Modifications to Terms of Service
 We may from time to time introduce new features to the service or modify or delete existing features. We will post any new or modified features when they become available, as well as any new or modified terms of this Agreement. Any new or modified terms will become effective for your use of the service upon the earlier of your use of a new or modified feature to which the new or modified term relates.
