@@ -1,0 +1,12 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": ["5792P6S32Z.com.sapsford.Lounges"],
+             "paths": [
+               "/lounge/*"
+             ]
+           }
+       ]
+   }
+}
