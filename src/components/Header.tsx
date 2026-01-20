@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import styles from './Header.module.css';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,8 +13,8 @@ export default function Header() {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Header() {
   }, [location]);
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
           <img src="/images/app-icon.png" alt="Loungebird" className={styles.logoIcon} />
@@ -30,8 +30,12 @@ export default function Header() {
         </Link>
 
         <nav className={styles.nav}>
-          <a href="/#features" className={styles.navLink}>Features</a>
-          <a href="/#screenshots" className={styles.navLink}>Screenshots</a>
+          <a href="/#features" className={styles.navLink}>
+            Features
+          </a>
+          <a href="/#screenshots" className={styles.navLink}>
+            Screenshots
+          </a>
           <a
             href="https://apps.apple.com/app/loungebird/id6443610959"
             target="_blank"
@@ -42,12 +46,8 @@ export default function Header() {
           </a>
         </nav>
 
-        <button
-          className={styles.mobileMenuButton}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ''}`} />
+        <button className={styles.mobileMenuButton} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
+          <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ""}`} />
         </button>
       </div>
 
@@ -60,8 +60,12 @@ export default function Header() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
           >
-            <a href="/#features" className={styles.mobileNavLink}>Features</a>
-            <a href="/#screenshots" className={styles.mobileNavLink}>Screenshots</a>
+            <a href="/#features" className={styles.mobileNavLink}>
+              Features
+            </a>
+            <a href="/#screenshots" className={styles.mobileNavLink}>
+              Screenshots
+            </a>
             <a
               href="https://apps.apple.com/app/loungebird/id6443610959"
               target="_blank"

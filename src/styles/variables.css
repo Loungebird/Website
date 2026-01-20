@@ -1,6 +1,6 @@
 :root {
   /* Color Palette - Inspired by Loungebird app */
-  --color-primary: #2b3a67; /* Deep navy blue from app icon */
+  --color-primary: #29317a; /* Deep navy blue from app icon */
   --color-primary-light: #4a5d8f; /* Lighter navy */
   --color-primary-dark: #1a2544; /* Darker navy */
 
@@ -24,7 +24,7 @@
   --color-crowded: #c4a080; /* Darker gold for crowded */
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #F0F5FF 0%, #F1F5FF 100%);
+  --gradient-hero: linear-gradient(135deg, #f0f5ff 0%, #f1f5ff 100%);
   --gradient-hero-dark: linear-gradient(135deg, #000000 0%, #002035 100%);
   --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 252, 0.8) 100%);
   --gradient-accent: linear-gradient(135deg, #2b3a67 0%, #4a5d8f 100%);
