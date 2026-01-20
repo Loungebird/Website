@@ -1,14 +1,14 @@
-import Hero from '../components/Hero';
-import Features from '../components/Features';
-import BentoGrid from '../components/BentoGrid';
-import Download from '../components/Download';
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import ScreensGrid from "../components/ScreensGrid";
+import Download from "../components/Download";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Features />
-      <BentoGrid />
+      <ScreensGrid />
       <Download />
     </>
   );

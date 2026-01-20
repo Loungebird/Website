@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import styles from './BentoGrid.module.css';
+import styles from './ScreensGrid.module.css';
 
 const bentoItems = [
   {
@@ -56,7 +56,7 @@ const itemVariants = {
   },
 };
 
-export default function BentoGrid() {
+export default function ScreensGrid() {
   return (
     <section id="screenshots" className={styles.screenshots}>
       <div className={styles.container}>
