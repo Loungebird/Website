@@ -66,43 +66,42 @@
   margin-right: auto;
 }
 
-.appStoreButton {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  padding: var(--space-md) var(--space-2xl);
-  background: var(--color-text-light);
-  color: var(--color-primary-dark);
-  border-radius: var(--radius-md);
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-lg);
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
   margin-bottom: var(--space-2xl);
 }
 
-.appStoreButton:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: var(--shadow-xl);
+.appStoreLink {
+  display: block;
+  transition: transform var(--transition-normal);
 }
 
-.appleIcon {
-  width: 32px;
-  height: 32px;
+.appStoreLink:hover {
+  transform: translateY(-2px);
 }
 
-.appStoreText {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+.appStoreBadge {
+  height: 54px;
+  width: auto;
+  display: none;
 }
 
-.appStoreSmall {
-  font-size: var(--font-size-xs);
-  opacity: 0.7;
+.appStoreBadgeDark {
+  height: 54px;
+  width: auto;
+  display: block;
 }
 
-.appStoreLarge {
-  font-size: var(--font-size-xl);
-  font-weight: 600;
+@media (prefers-color-scheme: light) {
+  .appStoreBadge {
+    display: block;
+  }
+
+  .appStoreBadgeDark {
+    display: none;
+  }
 }
 
 .features {
