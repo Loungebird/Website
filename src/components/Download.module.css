@@ -1,0 +1,139 @@
+.download {
+  position: relative;
+  padding: var(--space-4xl) 0;
+  background: var(--color-primary-dark);
+  overflow: hidden;
+}
+
+.backgroundGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(74, 93, 143, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  text-align: center;
+}
+
+.iconWrapper {
+  display: inline-block;
+  margin-bottom: var(--space-xl);
+}
+
+.appIcon {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-lg);
+}
+
+.titleAccent {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appStoreButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-2xl);
+  background: var(--color-text-light);
+  color: var(--color-primary-dark);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.appStoreButton:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+.appleIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.appStoreText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.appStoreSmall {
+  font-size: var(--font-size-xs);
+  opacity: 0.7;
+}
+
+.appStoreLarge {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--font-size-sm);
+}
+
+.feature svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent-gold);
+}
+
+@media (max-width: 640px) {
+  .appIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+}

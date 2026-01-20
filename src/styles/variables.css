@@ -1,0 +1,90 @@
+:root {
+  /* Color Palette - Inspired by Loungebird app */
+  --color-primary: #2B3A67;           /* Deep navy blue from app icon */
+  --color-primary-light: #4A5D8F;     /* Lighter navy */
+  --color-primary-dark: #1A2544;      /* Darker navy */
+
+  --color-accent-gold: #B8A080;       /* Champagne gold - luxury accent */
+  --color-accent-gold-light: #D4C4A8;
+  --color-accent-gold-dark: #8C7A5E;
+
+  --color-background: #F8F9FC;        /* Soft off-white */
+  --color-background-dark: #0D1117;   /* Dark mode background */
+  --color-surface: #FFFFFF;
+  --color-surface-dark: #161B22;
+
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #4A4A6A;
+  --color-text-muted: #8888A0;
+  --color-text-light: #FFFFFF;
+
+  /* Status colors from app */
+  --color-calm: #A8B5A0;              /* Green-gray for calm */
+  --color-busy: #B8A080;              /* Gold for busy */
+  --color-crowded: #C4A080;           /* Darker gold for crowded */
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #E8EAF6 0%, #C5CAE9 50%, #B8C5E8 100%);
+  --gradient-hero-dark: linear-gradient(135deg, #1A2544 0%, #2B3A67 50%, #1A2544 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(248,249,252,0.8) 100%);
+  --gradient-accent: linear-gradient(135deg, #2B3A67 0%, #4A5D8F 100%);
+  --gradient-gold: linear-gradient(135deg, #B8A080 0%, #D4C4A8 100%);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(43, 58, 103, 0.06);
+  --shadow-md: 0 4px 20px rgba(43, 58, 103, 0.1);
+  --shadow-lg: 0 8px 40px rgba(43, 58, 103, 0.15);
+  --shadow-xl: 0 20px 60px rgba(43, 58, 103, 0.2);
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.5rem;
+  --font-size-6xl: 4.5rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Z-index */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-background-dark);
+    --color-surface: var(--color-surface-dark);
+    --color-text-primary: #E6E6E6;
+    --color-text-secondary: #A0A0B0;
+    --color-text-muted: #6A6A80;
+  }
+}
