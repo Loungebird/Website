@@ -1,34 +1,34 @@
 :root {
   /* Color Palette - Inspired by Loungebird app */
-  --color-primary: #2B3A67;           /* Deep navy blue from app icon */
-  --color-primary-light: #4A5D8F;     /* Lighter navy */
-  --color-primary-dark: #1A2544;      /* Darker navy */
+  --color-primary: #2b3a67; /* Deep navy blue from app icon */
+  --color-primary-light: #4a5d8f; /* Lighter navy */
+  --color-primary-dark: #1a2544; /* Darker navy */
 
-  --color-accent-gold: #B8A080;       /* Champagne gold - luxury accent */
-  --color-accent-gold-light: #D4C4A8;
-  --color-accent-gold-dark: #8C7A5E;
+  --color-accent-gold: #b8a080; /* Champagne gold - luxury accent */
+  --color-accent-gold-light: #d4c4a8;
+  --color-accent-gold-dark: #8c7a5e;
 
-  --color-background: #F8F9FC;        /* Soft off-white */
-  --color-background-dark: #0D1117;   /* Dark mode background */
-  --color-surface: #FFFFFF;
-  --color-surface-dark: #161B22;
+  --color-background: #f8f9fc; /* Soft off-white */
+  --color-background-dark: #0d1117; /* Dark mode background */
+  --color-surface: #ffffff;
+  --color-surface-dark: #161b22;
 
-  --color-text-primary: #1A1A2E;
-  --color-text-secondary: #4A4A6A;
-  --color-text-muted: #8888A0;
-  --color-text-light: #FFFFFF;
+  --color-text-primary: #29317a;
+  --color-text-secondary: #4a4a6a;
+  --color-text-muted: #8888a0;
+  --color-text-light: #ffffff;
 
   /* Status colors from app */
-  --color-calm: #A8B5A0;              /* Green-gray for calm */
-  --color-busy: #B8A080;              /* Gold for busy */
-  --color-crowded: #C4A080;           /* Darker gold for crowded */
+  --color-calm: #a8b5a0; /* Green-gray for calm */
+  --color-busy: #b8a080; /* Gold for busy */
+  --color-crowded: #c4a080; /* Darker gold for crowded */
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #E8EAF6 0%, #C5CAE9 50%, #B8C5E8 100%);
-  --gradient-hero-dark: linear-gradient(135deg, #1A2544 0%, #2B3A67 50%, #1A2544 100%);
-  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(248,249,252,0.8) 100%);
-  --gradient-accent: linear-gradient(135deg, #2B3A67 0%, #4A5D8F 100%);
-  --gradient-gold: linear-gradient(135deg, #B8A080 0%, #D4C4A8 100%);
+  --gradient-hero: linear-gradient(135deg, #F0F5FF 0%, #F1F5FF 100%);
+  --gradient-hero-dark: linear-gradient(135deg, #000000 0%, #002035 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 252, 0.8) 100%);
+  --gradient-accent: linear-gradient(135deg, #2b3a67 0%, #4a5d8f 100%);
+  --gradient-gold: linear-gradient(135deg, #b8a080 0%, #d4c4a8 100%);
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(43, 58, 103, 0.06);
@@ -54,8 +54,8 @@
   --space-4xl: 96px;
 
   /* Typography */
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "SF Mono", Monaco, "Cascadia Code", monospace;
 
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -83,8 +83,9 @@
   :root {
     --color-background: var(--color-background-dark);
     --color-surface: var(--color-surface-dark);
-    --color-text-primary: #E6E6E6;
-    --color-text-secondary: #A0A0B0;
-    --color-text-muted: #6A6A80;
+    --color-text-primary: #e6e6e6;
+    --color-text-secondary: #a0a0b0;
+    --color-text-muted: #6a6a80;
+    --gradient-hero: var(--gradient-hero-dark);
   }
 }
