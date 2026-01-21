@@ -10,50 +10,21 @@ export default function Hero() {
       <div className={styles.container}>
         <motion.div
           className={styles.content}
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1.0, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className={styles.badge}>
-            <span className={styles.badgeDot} />
-            Live Occupancy Data
-          </div>
+          <h1 className={styles.title}>Lounge smarter at LHR</h1>
 
-          <h1 className={styles.title}>Lounge smarter at London Heathrow</h1>
-
-          <p className={styles.subtitle}>
-            Real-time occupancy insights for Terminal 5 lounges. Find the perfect space to relax before your flight.
-          </p>
+          <p className={styles.subtitle}>The perfect pre-flight companion for luxurious lounging at London Heathrow Terminal 5.</p>
 
           <div className={styles.actions}>
-            <a
-              href="https://apps.apple.com/app/loungebird"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.appStoreLink}
-            >
-              <img
-                src="/images/appstore/appstore-ios-light.svg"
-                alt="Download on the App Store"
-                className={styles.appStoreBadge}
-              />
-              <img
-                src="/images/appstore/appstore-ios-dark.svg"
-                alt="Download on the App Store"
-                className={styles.appStoreBadgeDark}
-              />
+            <a href="https://apps.apple.com/app/loungebird" target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
+              <img src="/images/appstore/appstore-ios-light.svg" alt="Download on the App Store" className={styles.appStoreBadge} />
+              <img src="/images/appstore/appstore-ios-dark.svg" alt="Download on the App Store" className={styles.appStoreBadgeDark} />
             </a>
-            <a
-              href="https://apps.apple.com/app/loungebird"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.appStoreLink}
-            >
-              <img
-                src="/images/appstore/appstore-macos-light.svg"
-                alt="Download on the Mac App Store"
-                className={styles.appStoreBadge}
-              />
+            <a href="https://apps.apple.com/app/loungebird" target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
+              <img src="/images/appstore/appstore-macos-light.svg" alt="Download on the Mac App Store" className={styles.appStoreBadge} />
               <img
                 src="/images/appstore/appstore-macos-dark.svg"
                 alt="Download on the Mac App Store"
@@ -65,18 +36,12 @@ export default function Hero() {
 
         <motion.div
           className={styles.deviceShowcase}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className={styles.deviceContainer}>
-            <div className={styles.ipadFrame}>
-              <img src="/images/screenshots/ipad/1.png" alt="Loungebird on iPad" className={styles.ipadScreen} />
-            </div>
-            <div className={styles.iphoneFrame}>
-              <img src="/images/screenshots/ios/1.png" alt="Loungebird on iPhone" className={styles.iphoneScreen} />
-            </div>
-          </div>
+          <img src="/images/hero-light.png" alt="Loungebird on iPhone and iPad" className={styles.heroImage} />
+          <img src="/images/hero-dark.png" alt="Loungebird on iPhone and iPad" className={styles.heroImageDark} />
         </motion.div>
       </div>
 
