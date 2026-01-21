@@ -67,7 +67,7 @@ export default function Features() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <span className={styles.label}>Features</span>
+          <span className="capsule">Features</span>
           <h2 className={styles.title}>
             Beautifully Crafted,
             <br />
