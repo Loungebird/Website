@@ -10,7 +10,7 @@
 .backgroundGradient {
   position: absolute;
   inset: 0;
-  background: var(--gradient-hero);
+  background: var(--gradient-sky);
   z-index: -2;
 }
 

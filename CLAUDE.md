@@ -56,20 +56,19 @@ public/
 
 ### Colors (defined in variables.css)
 
-| Variable | Value | Usage |
-|----------|-------|-------|
-| `--color-primary` | #2B3A67 | Deep navy blue (from app icon) |
-| `--color-primary-light` | #4A5D8F | Lighter navy |
-| `--color-primary-dark` | #1A2544 | Darker navy |
-| `--color-accent-gold` | #B8A080 | Champagne gold (luxury accent) |
-| `--color-background` | #F8F9FC | Soft off-white |
-| `--color-text-primary` | #1A1A2E | Main text |
-| `--color-text-secondary` | #4A4A6A | Secondary text |
-| `--color-text-muted` | #8888A0 | Muted/subtle text |
+| Variable                 | Value   | Usage                               |
+| ------------------------ | ------- | ----------------------------------- |
+| `--color-primary`        | #2B3A67 | Deep navy blue (from app icon)      |
+| `--color-primary-dark`   | #1A2544 | Dark mode variant for color primary |
+| `--color-accent-gold`    | #B8A080 | Champagne gold (luxury accent)      |
+| `--color-background`     | #F8F9FC | Soft off-white                      |
+| `--color-text-primary`   | #1A1A2E | Main text                           |
+| `--color-text-secondary` | #4A4A6A | Secondary text                      |
+| `--color-text-muted`     | #8888A0 | Muted/subtle text                   |
 
 ### Gradients
 
-- `--gradient-hero`: Linear gradient for hero background (light purples/blues)
+- `--gradient-sky`: Linear gradient for hero background (light purples/blues)
 - `--gradient-accent`: Primary to primary-light gradient for text accents
 - `--gradient-gold`: Gold gradient for luxury accents
 
@@ -94,6 +93,7 @@ Four levels: `--shadow-sm`, `--shadow-md`, `--shadow-lg`, `--shadow-xl`
 ## Components
 
 ### Hero (`Hero.tsx`)
+
 - Full viewport height landing section
 - Two-column layout: content left, device showcase right
 - Device showcase shows iPad with iPhone overlay (framed with dark bezels)
@@ -103,7 +103,9 @@ Four levels: `--shadow-sm`, `--shadow-md`, `--shadow-lg`, `--shadow-xl`
 - Background: gradient + subtle dot pattern
 
 ### Features (`Features.tsx`)
+
 Six features in a responsive grid:
+
 1. Real-Time Updates (primary accent)
 2. Historic Trends (gold accent)
 3. Home Screen Widgets (primary accent)
@@ -112,26 +114,32 @@ Six features in a responsive grid:
 6. Privacy First (gold accent)
 
 ### BentoGrid (`BentoGrid.tsx`)
+
 Screenshot showcase in bento grid layout:
+
 - Large: Live Occupancy (iOS screenshot)
 - Medium: Detailed Insights, Dark Mode
 - Wide: Widgets
 - Full: Mac App
 
 ### Download (`Download.tsx`)
+
 Final CTA section with:
+
 - App icon
 - Download headline
 - App Store button
 - Feature checkmarks (Free, No account, Privacy focused)
 
 ### Header (`Header.tsx`)
+
 - Fixed position, becomes blurred/elevated on scroll
 - Logo (icon + text) links to home
 - Navigation: Features, Screenshots (anchor links), Download (App Store)
 - Mobile hamburger menu with AnimatePresence
 
 ### Footer (`Footer.tsx`)
+
 - Brand section with tagline
 - Link groups: Product, Legal, Contact
 - Copyright with author link
@@ -158,21 +166,23 @@ npm run preview  # Preview production build
 
 ## Routes
 
-| Path | Component | Description |
-|------|-----------|-------------|
-| `/` | Home | Main landing page |
-| `/terms` | Terms | Terms of Use |
-| `/privacy` | Privacy | Privacy Policy |
-| `/disclaimer` | Disclaimer | Disclaimer |
+| Path          | Component  | Description       |
+| ------------- | ---------- | ----------------- |
+| `/`           | Home       | Main landing page |
+| `/terms`      | Terms      | Terms of Use      |
+| `/privacy`    | Privacy    | Privacy Policy    |
+| `/disclaimer` | Disclaimer | Disclaimer        |
 
 ## Image Requirements
 
 Screenshots should be placed in:
+
 - `public/images/screenshots/ios/` - iPhone screenshots (1.png through 4.png)
 - `public/images/screenshots/ipad/` - iPad screenshots (1.png)
 - `public/images/screenshots/mac/` - Mac screenshots (1.png)
 
 The Hero component uses:
+
 - `images/screenshots/ipad/1.png` for iPad frame
 - `images/screenshots/ios/1.png` for iPhone frame overlay
 

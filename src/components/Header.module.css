@@ -9,7 +9,7 @@
 }
 
 .header.scrolled {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--color-header-scrolled);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--shadow-sm);

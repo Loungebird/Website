@@ -4,7 +4,7 @@
 }
 
 .hero {
-  background: var(--gradient-hero);
+  background: var(--gradient-sky);
   padding: var(--space-4xl) 0;
   text-align: center;
 }
