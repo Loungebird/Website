@@ -1,8 +1,7 @@
 :root {
-  /* Color Palette - Inspired by Loungebird app */
-  --color-primary: #29317a; /* Deep navy blue from app icon */
-  --color-primary-light: #4a5d8f; /* Lighter navy */
-  --color-primary-dark: #1a2544; /* Darker navy */
+  /* Color Palette */
+  --color-primary: #29317a;
+  --color-primary-dark: #c3d6f6;
 
   --color-accent-gold: #b8a080; /* Champagne gold - luxury accent */
   --color-accent-gold-light: #d4c4a8;
@@ -13,8 +12,13 @@
   --color-surface: #ffffff;
   --color-surface-dark: #161b22;
 
+  --color-header-scrolled: rgba(255, 255, 255, 0.75);
+  --color-header-scrolled-dark: rgba(0, 0, 0, 0.75);
+
   --color-text-primary: #29317a;
+  --color-text-primary-dark: #c3d6f6;
   --color-text-secondary: #4a4a6a;
+  --color-text-secondary-dark: #a0a0b0;
   --color-text-muted: #8888a0;
   --color-text-light: #ffffff;
 
@@ -24,8 +28,8 @@
   --color-crowded: #c4a080; /* Darker gold for crowded */
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #f0f5ff 0%, #f1f5ff 100%);
-  --gradient-hero-dark: linear-gradient(135deg, #000000 0%, #002035 100%);
+  --gradient-sky: linear-gradient(135deg, #f0f5ff 0%, #f1f5ff 100%);
+  --gradient-sky-dark: linear-gradient(135deg, #000000 0%, #002035 100%);
   --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 252, 0.8) 100%);
   --gradient-accent: linear-gradient(135deg, #2b3a67 0%, #4a5d8f 100%);
   --gradient-gold: linear-gradient(135deg, #b8a080 0%, #d4c4a8 100%);
@@ -81,11 +85,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --color-primary: var(--color-primary-dark);
     --color-background: var(--color-background-dark);
     --color-surface: var(--color-surface-dark);
-    --color-text-primary: #e6e6e6;
-    --color-text-secondary: #a0a0b0;
+    --color-header-scrolled: var(--color-header-scrolled-dark);
+    --color-text-primary: var(--color-text-primary-dark);
+    --color-text-secondary: var(--color-text-secondary-dark);
     --color-text-muted: #6a6a80;
-    --gradient-hero: var(--gradient-hero-dark);
+    --gradient-sky: var(--gradient-sky-dark);
   }
 }

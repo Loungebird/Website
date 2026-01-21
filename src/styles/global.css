@@ -1,4 +1,4 @@
-@import './variables.css';
+@import "./variables.css";
 
 * {
   margin: 0;
@@ -37,7 +37,12 @@ button {
   outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -119,22 +124,4 @@ p {
 ::selection {
   background: var(--color-primary);
   color: var(--color-text-light);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-primary-light);
-  border-radius: var(--radius-full);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary);
 }
