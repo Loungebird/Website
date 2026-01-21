@@ -1,74 +1,36 @@
-import { motion } from 'framer-motion';
-import styles from './Features.module.css';
+import { motion } from "framer-motion";
+import styles from "./Features.module.css";
 
-const features = [
+const bentoItems = [
   {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 6v6l4 2" />
-      </svg>
-    ),
-    title: 'Real-Time Updates',
-    description: 'Live occupancy data streamed directly from Terminal 5 lounges, updated continuously throughout the day.',
-    accent: 'primary',
+    title: "Live Occupancy",
+    description: "See real-time capacity for all Terminal 5 lounges at a glance",
+    image: "/images/screenshots/ios/1.png",
+    size: "large",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M3 3v18h18" />
-        <path d="M18 9l-5 5-4-4-4 4" />
-      </svg>
-    ),
-    title: 'Historic Trends',
-    description: 'View historical occupancy patterns to plan your visit. Know the quietest times before you even arrive.',
-    accent: 'gold',
+    title: "Detailed Insights",
+    description: "Entry requirements, opening hours, and current status",
+    image: "/images/screenshots/ios/2.png",
+    size: "medium",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <rect x="3" y="3" width="18" height="18" rx="2" />
-        <path d="M3 9h18" />
-        <path d="M9 21V9" />
-      </svg>
-    ),
-    title: 'Home Screen Widgets',
-    description: 'Glanceable widgets for your Lock Screen and Home Screen. Check lounge status without opening the app.',
-    accent: 'primary',
+    title: "Dark Mode",
+    description: "Beautiful in any lighting condition",
+    image: "/images/screenshots/ios/3.png",
+    size: "medium",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M12 2L2 7l10 5 10-5-10-5z" />
-        <path d="M2 17l10 5 10-5" />
-        <path d="M2 12l10 5 10-5" />
-      </svg>
-    ),
-    title: 'All T5 Lounges',
-    description: 'Coverage of every British Airways lounge: Concorde Room, First, Club South, Club North, and B Gates.',
-    accent: 'gold',
+    title: "Widgets",
+    description: "Glanceable information on your Home and Lock Screen",
+    image: "/images/screenshots/ios/4.png",
+    size: "wide",
   },
   {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <rect x="2" y="3" width="20" height="14" rx="2" />
-        <path d="M8 21h8" />
-        <path d="M12 17v4" />
-      </svg>
-    ),
-    title: 'Multi-Platform',
-    description: 'Native apps for iPhone, iPad, and Mac. Seamlessly synced across all your Apple devices.',
-    accent: 'primary',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    ),
-    title: 'Privacy First',
-    description: 'No personal data collected. No tracking. No ads. Just a beautiful, focused experience.',
-    accent: 'gold',
+    title: "Mac App",
+    description: "Native experience on macOS",
+    image: "/images/screenshots/mac/1.png",
+    size: "full",
   },
 ];
 
@@ -83,10 +45,10 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, scale: 0.95 },
   visible: {
     opacity: 1,
-    y: 0,
+    scale: 1,
     transition: {
       duration: 0.6,
       ease: [0.16, 1, 0.3, 1] as const,
@@ -102,37 +64,34 @@ export default function Features() {
           className={styles.header}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
           <span className={styles.label}>Features</span>
           <h2 className={styles.title}>
-            Everything You Need to<br />
-            <span className={styles.titleAccent}>Travel Relaxed</span>
+            Beautifully Crafted,
+            <br />
+            <span className={styles.titleAccent}>Thoughtfully Designed</span>
           </h2>
-          <p className={styles.subtitle}>
-            Designed for discerning travellers who value their time and comfort.
-          </p>
+          <p className={styles.subtitle}>Every pixel considered. Every interaction refined.</p>
         </motion.div>
 
         <motion.div
-          className={styles.grid}
+          className={styles.bentoGrid}
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
         >
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              className={`${styles.card} ${styles[feature.accent]}`}
-              variants={itemVariants}
-            >
-              <div className={styles.iconWrapper}>
-                {feature.icon}
+          {bentoItems.map((item, index) => (
+            <motion.div key={index} className={`${styles.bentoItem} ${styles[item.size]}`} variants={itemVariants}>
+              <div className={styles.bentoContent}>
+                <h3 className={styles.bentoTitle}>{item.title}</h3>
+                <p className={styles.bentoDescription}>{item.description}</p>
               </div>
-              <h3 className={styles.cardTitle}>{feature.title}</h3>
-              <p className={styles.cardDescription}>{feature.description}</p>
+              <div className={styles.bentoImageWrapper}>
+                <img src={item.image} alt={item.title} className={styles.bentoImage} />
+              </div>
             </motion.div>
           ))}
         </motion.div>

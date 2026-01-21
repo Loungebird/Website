@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Header.module.css";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,9 +16,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location]);
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
@@ -32,9 +29,6 @@ export default function Header() {
         <nav className={styles.nav}>
           <a href="/#features" className={styles.navLink}>
             Features
-          </a>
-          <a href="/#screenshots" className={styles.navLink}>
-            Screenshots
           </a>
           <a
             href="https://apps.apple.com/app/loungebird/id6443610959"
@@ -60,17 +54,15 @@ export default function Header() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
           >
-            <a href="/#features" className={styles.mobileNavLink}>
+            <a href="/#features" className={styles.mobileNavLink} onClick={closeMobileMenu}>
               Features
-            </a>
-            <a href="/#screenshots" className={styles.mobileNavLink}>
-              Screenshots
             </a>
             <a
               href="https://apps.apple.com/app/loungebird/id6443610959"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.mobileDownloadButton}
+              onClick={closeMobileMenu}
             >
               Download on the App Store
             </a>
