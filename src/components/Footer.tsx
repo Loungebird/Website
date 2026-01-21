@@ -18,15 +18,12 @@ export default function Footer() {
 
           <div className={styles.links}>
             <div className={styles.linkGroup}>
-              <h4 className={styles.linkGroupTitle}>Product</h4>
+              <h4 className={styles.linkGroupTitle}>Loungebird</h4>
               <a href="/#features" className={styles.link}>
                 Features
               </a>
-              <a href="/#screenshots" className={styles.link}>
-                Screenshots
-              </a>
               <a
-                href="https://apps.apple.com/app/loungebird/id6443610959"
+                href="https://apps.apple.com/gb/app/loungebird/id6473727770"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
