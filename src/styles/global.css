@@ -87,6 +87,19 @@ p {
   color: var(--color-accent-gold);
 }
 
+.capsule {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--color-capsule-background);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-capsule-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-lg);
+}
+
 /* Responsive Typography */
 @media (max-width: 768px) {
   h1 {

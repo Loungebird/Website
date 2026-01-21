@@ -7,20 +7,29 @@
   --color-accent-gold-light: #d4c4a8;
   --color-accent-gold-dark: #8c7a5e;
 
+  /* Backgrounds */
   --color-background: #ffffff;
   --color-background-dark: #000000;
   --color-surface: #ffffff;
   --color-surface-dark: #161b22;
 
+  /* Header */
   --color-header-scrolled: rgba(255, 255, 255, 0.75);
   --color-header-scrolled-dark: rgba(0, 0, 0, 0.75);
 
+  /* Text */
   --color-text-primary: #29317a;
   --color-text-primary-dark: #c3d6f6;
   --color-text-secondary: #4a4a6a;
   --color-text-secondary-dark: #a0a0b0;
   --color-text-muted: #8888a0;
   --color-text-light: #ffffff;
+
+  /* Capsule */
+  --color-capsule-background: #29317a;
+  --color-capsule-background-dark: #f0f5ff;
+  --color-capsule-text: #ffffff;
+  --color-capsule-text-dark: #29317a;
 
   /* Status colors from app */
   --color-calm: #a8b5a0; /* Green-gray for calm */
@@ -89,6 +98,8 @@
     --color-background: var(--color-background-dark);
     --color-surface: var(--color-surface-dark);
     --color-header-scrolled: var(--color-header-scrolled-dark);
+    --color-capsule-background: var(--color-capsule-background-dark);
+    --color-capsule-text: var(--color-capsule-text-dark);
     --color-text-primary: var(--color-text-primary-dark);
     --color-text-secondary: var(--color-text-secondary-dark);
     --color-text-muted: #6a6a80;

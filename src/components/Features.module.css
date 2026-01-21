@@ -1,5 +1,5 @@
 .features {
-  padding: var(--space-4xl) 0;
+  padding: var(--space-3xl) 0;
   background: var(--color-background);
 }
 
@@ -13,19 +13,6 @@
   text-align: center;
   max-width: 600px;
   margin: 0 auto var(--space-4xl);
-}
-
-.label {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-md);
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: var(--radius-full);
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  color: var(--color-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: var(--space-md);
 }
 
 .title {
