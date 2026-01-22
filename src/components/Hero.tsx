@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { links } from "../config/links";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -14,18 +15,18 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h1 className={styles.title}>Lounge smarter at LHR</h1>
+          <h1 className={styles.title}>Lounge Smarter at LHR</h1>
 
           <p className={styles.subtitle}>
             The perfect pre-flight companion for luxurious lounging<br></br>at London Heathrow Terminal 5.
           </p>
 
           <div className={styles.actions}>
-            <a href="https://apps.apple.com/app/loungebird" target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
+            <a href={links.appStore} target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
               <img src="/images/appstore/appstore-ios-light.svg" alt="Download on the App Store" className={styles.appStoreBadge} />
               <img src="/images/appstore/appstore-ios-dark.svg" alt="Download on the App Store" className={styles.appStoreBadgeDark} />
             </a>
-            <a href="https://apps.apple.com/app/loungebird" target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
+            <a href={links.appStore} target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
               <img src="/images/appstore/appstore-macos-light.svg" alt="Download on the Mac App Store" className={styles.appStoreBadge} />
               <img
                 src="/images/appstore/appstore-macos-dark.svg"
