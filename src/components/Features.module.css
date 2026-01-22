@@ -82,6 +82,23 @@
   object-fit: contain;
 }
 
+.bentoImageDark {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bentoImage:has(+ .bentoImageDark) {
+    display: none;
+  }
+
+  .bentoImageDark {
+    display: block;
+  }
+}
+
 /* Size variants */
 .large {
   grid-column: span 2;
@@ -114,6 +131,20 @@
 /* Sky Theme */
 .themeSky {
   background: var(--gradient-sky);
+}
+
+/* Gold Theme */
+.themeGold {
+  background: var(--gradient-gold);
+}
+
+.themeGold .bentoTitle,
+.themeGold .bentoDescription {
+  color: var(--color-text-plain);
+}
+
+.themeGold .bentoDescription {
+  opacity: 0.5;
 }
 
 /* Night Theme */
@@ -204,11 +235,11 @@
 
 .themeNight .bentoTitle,
 .themeNight .bentoDescription {
-  color: #ffffff;
+  color: var(--color-text-white);
 }
 
 .themeNight .bentoDescription {
-  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.6;
 }
 
 /* Responsive */

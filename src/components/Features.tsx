@@ -1,17 +1,28 @@
 import { motion } from "framer-motion";
 import styles from "./Features.module.css";
 
-const bentoItems = [
+interface BentoItem {
+  title: string;
+  description: string;
+  image: string;
+  imageDark?: string;
+  size: string;
+  theme?: string;
+}
+
+const bentoItems: BentoItem[] = [
   {
     title: "Live Occupancy",
     description: "Real-time occupancy, no reload required",
-    image: "/images/features/dark-mode.png",
+    image: "/images/features/live-occupancy.png",
+    imageDark: "/images/features/live-occupancy-dark.png",
     size: "medium",
+    theme: "gold",
   },
   {
     title: "Details, Detailed",
     description: "Entry requirements, opening hours, and current status",
-    image: "/images/features/dark-mode.png",
+    image: "/images/features/cutting-edge.png",
     size: "medium",
   },
   {
@@ -24,13 +35,13 @@ const bentoItems = [
   {
     title: "Customize Away",
     description: "Entry requirements, opening hours, and current status",
-    image: "/images/features/dark-mode.png",
+    image: "/images/features/cutting-edge.png",
     size: "medium",
   },
   {
     title: "Cutting Edge",
     description: "Support for the latest system updates and features",
-    image: "/images/features/dark-mode.png",
+    image: "/images/features/cutting-edge.png",
     size: "medium",
     theme: "night",
   },
@@ -97,6 +108,7 @@ export default function Features() {
                 </div>
                 <div className={styles.bentoImageWrapper}>
                   <img src={item.image} alt={item.title} className={styles.bentoImage} />
+                  {item.imageDark && <img src={item.imageDark} alt={item.title} className={styles.bentoImageDark} />}
                 </div>
               </motion.div>
             );
