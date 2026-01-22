@@ -90,6 +90,9 @@
   --z-dropdown: 100;
   --z-sticky: 200;
   --z-modal: 300;
+
+  /* Layout */
+  --header-height: 72px;
 }
 
 @media (prefers-color-scheme: dark) {

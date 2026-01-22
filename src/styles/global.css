@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset anchor links for fixed header */
+[id] {
+  scroll-margin-top: var(--header-height);
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--color-background);
