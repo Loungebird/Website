@@ -22,8 +22,10 @@
   --color-text-primary-dark: #c3d6f6;
   --color-text-secondary: #4a4a6a;
   --color-text-secondary-dark: #a0a0b0;
+  --color-text-plain: var(--color-text-black);
+  --color-text-white: #ffffff;
+  --color-text-black: #000000;
   --color-text-muted: #8888a0;
-  --color-text-light: #ffffff;
 
   /* Capsule */
   --color-capsule-background: #29317a;
@@ -39,9 +41,10 @@
   /* Gradients */
   --gradient-sky: linear-gradient(135deg, #f0f5ff 0%, #f1f5ff 100%);
   --gradient-sky-dark: linear-gradient(135deg, #000000 0%, #002035 100%);
+  --gradient-gold: linear-gradient(135deg, #f2e9df 0%, #e5d7c2 100%);
+  --gradient-gold-dark: linear-gradient(135deg, #958e87 0%, #6f6556 100%);
   --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 252, 0.8) 100%);
   --gradient-accent: linear-gradient(135deg, #2b3a67 0%, #4a5d8f 100%);
-  --gradient-gold: linear-gradient(135deg, #b8a080 0%, #d4c4a8 100%);
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(43, 58, 103, 0.06);
@@ -105,7 +108,9 @@
     --color-capsule-text: var(--color-capsule-text-dark);
     --color-text-primary: var(--color-text-primary-dark);
     --color-text-secondary: var(--color-text-secondary-dark);
+    --color-text-plain: var(--color-text-white);
     --color-text-muted: #6a6a80;
     --gradient-sky: var(--gradient-sky-dark);
+    --gradient-gold: var(--gradient-gold-dark);
   }
 }

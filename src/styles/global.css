@@ -141,5 +141,5 @@ p {
 /* Selection */
 ::selection {
   background: var(--color-primary);
-  color: var(--color-text-light);
+  color: var(--color-text-white);
 }
