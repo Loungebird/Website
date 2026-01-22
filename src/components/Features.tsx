@@ -4,27 +4,35 @@ import styles from "./Features.module.css";
 const bentoItems = [
   {
     title: "Live Occupancy",
-    description: "See real-time capacity for all Terminal 5 lounges at a glance",
-    image: "/images/screenshots/ios/1.png",
-    size: "large",
-  },
-  {
-    title: "Detailed Insights",
-    description: "Entry requirements, opening hours, and current status",
-    image: "/images/screenshots/ios/2.png",
+    description: "Real-time occupancy, no reload required",
+    image: "/images/features/dark-mode.png",
     size: "medium",
   },
   {
-    title: "Dark Mode",
-    description: "Beautiful in any lighting condition",
-    image: "/images/screenshots/ios/3.png",
+    title: "Details, Detailed",
+    description: "Entry requirements, opening hours, and current status",
+    image: "/images/features/dark-mode.png",
     size: "medium",
   },
   {
     title: "Widgets",
-    description: "Glanceable information on your Home and Lock Screen",
-    image: "/images/screenshots/ios/4.png",
-    size: "wide",
+    description: "Glanceable on your Home and Lock Screen",
+    image: "/images/features/widgets.png",
+    size: "large",
+    theme: "sky",
+  },
+  {
+    title: "Customize Away",
+    description: "Entry requirements, opening hours, and current status",
+    image: "/images/features/dark-mode.png",
+    size: "medium",
+  },
+  {
+    title: "Cutting Edge",
+    description: "Support for the latest system updates and features",
+    image: "/images/features/dark-mode.png",
+    size: "medium",
+    theme: "night",
   },
   {
     title: "Mac App",
@@ -79,17 +87,20 @@ export default function Features() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {bentoItems.map((item, index) => (
-            <motion.div key={index} className={`${styles.bentoItem} ${styles[item.size]}`} variants={itemVariants}>
-              <div className={styles.bentoContent}>
-                <h3 className={styles.bentoTitle}>{item.title}</h3>
-                <p className={styles.bentoDescription}>{item.description}</p>
-              </div>
-              <div className={styles.bentoImageWrapper}>
-                <img src={item.image} alt={item.title} className={styles.bentoImage} />
-              </div>
-            </motion.div>
-          ))}
+          {bentoItems.map((item, index) => {
+            const themeClass = item.theme ? styles[`theme${item.theme.charAt(0).toUpperCase()}${item.theme.slice(1)}`] : "";
+            return (
+              <motion.div key={index} className={`${styles.bentoItem} ${styles[item.size]} ${themeClass}`} variants={itemVariants}>
+                <div className={styles.bentoContent}>
+                  <h3 className={styles.bentoTitle}>{item.title}</h3>
+                  <p className={styles.bentoDescription}>{item.description}</p>
+                </div>
+                <div className={styles.bentoImageWrapper}>
+                  <img src={item.image} alt={item.title} className={styles.bentoImage} />
+                </div>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>
