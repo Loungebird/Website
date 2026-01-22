@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { links } from "../config/links";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -23,7 +24,7 @@ export default function Footer() {
                 Features
               </a>
               <a
-                href="https://apps.apple.com/gb/app/loungebird/id6473727770"
+                href={links.appStore}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
@@ -57,7 +58,7 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p className={styles.copyright}>
             &copy; {currentYear} Loungebird. Made by{" "}
-            <a href="https://sapsford.tech" target="_blank" rel="noopener noreferrer" className={styles.authorLink}>
+            <a href={links.author} target="_blank" rel="noopener noreferrer" className={styles.authorLink}>
               Merrick Sapsford
             </a>
           </p>

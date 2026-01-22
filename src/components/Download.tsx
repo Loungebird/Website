@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { links } from '../config/links';
 import styles from './Download.module.css';
 
 export default function Download() {
@@ -34,7 +35,7 @@ export default function Download() {
 
           <div className={styles.actions}>
             <a
-              href="https://apps.apple.com/app/loungebird"
+              href={links.appStore}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.appStoreLink}
@@ -51,7 +52,7 @@ export default function Download() {
               />
             </a>
             <a
-              href="https://apps.apple.com/app/loungebird"
+              href={links.appStore}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.appStoreLink}

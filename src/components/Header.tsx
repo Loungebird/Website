@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { links } from "../config/links";
 import styles from "./Header.module.css";
 
 export default function Header() {
@@ -31,7 +32,7 @@ export default function Header() {
             Features
           </a>
           <a
-            href="https://apps.apple.com/app/loungebird/id6443610959"
+            href={links.appStore}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.downloadButton}
@@ -58,7 +59,7 @@ export default function Header() {
               Features
             </a>
             <a
-              href="https://apps.apple.com/app/loungebird/id6443610959"
+              href={links.appStore}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.mobileDownloadButton}
