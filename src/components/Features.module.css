@@ -40,14 +40,9 @@
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  transition: all var(--transition-normal);
+  transition: box-shadow var(--transition-normal);
   display: flex;
   flex-direction: column;
-}
-
-.bentoItem:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-xl);
 }
 
 .bentoContent {

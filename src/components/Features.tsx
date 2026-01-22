@@ -46,8 +46,8 @@ const bentoItems: BentoItem[] = [
     theme: "night",
   },
   {
-    title: "Mac App",
-    description: "Native experience on macOS",
+    title: "Available Everywhere",
+    description: "Enjoy Loungebird on your iPhone, iPad and your Mac",
     image: "/images/screenshots/mac/1.png",
     size: "full",
   },
@@ -58,18 +58,19 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
+      delayChildren: 0.3,
+      staggerChildren: 0.15,
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, scale: 0.95 },
+  hidden: { opacity: 0, scale: 0.9 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.8,
       ease: [0.16, 1, 0.3, 1] as const,
     },
   },
@@ -101,7 +102,13 @@ export default function Features() {
           {bentoItems.map((item, index) => {
             const themeClass = item.theme ? styles[`theme${item.theme.charAt(0).toUpperCase()}${item.theme.slice(1)}`] : "";
             return (
-              <motion.div key={index} className={`${styles.bentoItem} ${styles[item.size]} ${themeClass}`} variants={itemVariants}>
+              <motion.div
+                key={index}
+                className={`${styles.bentoItem} ${styles[item.size]} ${themeClass}`}
+                variants={itemVariants}
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              >
                 <div className={styles.bentoContent}>
                   <h3 className={styles.bentoTitle}>{item.title}</h3>
                   <p className={styles.bentoDescription}>{item.description}</p>
