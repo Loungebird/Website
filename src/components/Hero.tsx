@@ -16,7 +16,9 @@ export default function Hero() {
         >
           <h1 className={styles.title}>Lounge smarter at LHR</h1>
 
-          <p className={styles.subtitle}>The perfect pre-flight companion for luxurious lounging at London Heathrow Terminal 5.</p>
+          <p className={styles.subtitle}>
+            The perfect pre-flight companion for luxurious lounging<br></br>at London Heathrow Terminal 5.
+          </p>
 
           <div className={styles.actions}>
             <a href="https://apps.apple.com/app/loungebird" target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
