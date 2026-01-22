@@ -69,7 +69,7 @@ export default function Features() {
         >
           <span className="capsule">Features</span>
           <h2 className={styles.title}>Tailored Travel</h2>
-          <p className={styles.subtitle}>Every pixel considered. Every interaction refined.</p>
+          <p className={styles.subtitle}>Effortlessly find the best way to unwind and relax before your flight with Loungebird.</p>
         </motion.div>
 
         <motion.div
