@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Terms from './pages/Terms';
-import Privacy from './pages/Privacy';
-import Disclaimer from './pages/Disclaimer';
-import './styles/global.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/home/Home";
+import Terms from "./pages/legal/Terms";
+import Privacy from "./pages/legal/Privacy";
+import Disclaimer from "./pages/legal/Disclaimer";
+import "./styles/global.css";
 
 function App() {
   return (

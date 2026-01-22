@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { links } from "../config/links";
+import { links } from "../../../config/links";
 import styles from "./Download.module.css";
 
 export default function Download() {
