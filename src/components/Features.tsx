@@ -68,11 +68,7 @@ export default function Features() {
           transition={{ duration: 0.6 }}
         >
           <span className="capsule">Features</span>
-          <h2 className={styles.title}>
-            Beautifully Crafted,
-            <br />
-            <span className={styles.titleAccent}>Thoughtfully Designed</span>
-          </h2>
+          <h2 className={styles.title}>Tailored Travel</h2>
           <p className={styles.subtitle}>Every pixel considered. Every interaction refined.</p>
         </motion.div>
 
