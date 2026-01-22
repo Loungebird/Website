@@ -23,12 +23,7 @@ export default function Footer() {
               <a href="/#features" className={styles.link}>
                 Features
               </a>
-              <a
-                href={links.appStore}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
+              <a href={links.appStore} target="_blank" rel="noopener noreferrer" className={styles.link}>
                 Download
               </a>
             </div>
@@ -62,7 +57,7 @@ export default function Footer() {
               Merrick Sapsford
             </a>
           </p>
-          <p className={styles.disclaimer}>Not affiliated with British Airways.</p>
+          <p className={styles.disclaimer}>Not affiliated with British Airways</p>
         </div>
       </div>
     </footer>
