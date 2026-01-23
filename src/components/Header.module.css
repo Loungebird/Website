@@ -136,17 +136,8 @@
 
 .mobileMenu {
   display: none;
-  position: fixed;
-  top: 72px;
-  left: 0;
-  right: 0;
-  z-index: calc(var(--z-sticky) - 1);
-  background: var(--color-header-scrolled);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: var(--space-lg);
-  border-top: 1px solid rgba(43, 58, 103, 0.1);
-  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  padding: 0 var(--space-lg) var(--space-lg);
 }
 
 .mobileNavLink {
