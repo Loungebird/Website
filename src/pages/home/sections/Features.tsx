@@ -39,9 +39,10 @@ const featureItems: BentoItem[] = [
     theme: "night",
   },
   {
-    title: "Available Everywhere",
-    description: "Enjoy Loungebird on your iPhone, iPad and your Mac",
-    image: "/images/screenshots/mac/1.png",
+    title: "Everyhere, Anytime",
+    description: "Enjoy Loungebird on iPhone, iPad and Mac",
+    image: "/images/features/devices.png",
+    imageDark: "/images/features/devices-dark.png",
     size: "full",
   },
 ];
