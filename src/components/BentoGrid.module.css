@@ -345,20 +345,24 @@
 
 @media (max-width: 640px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .small,
-  .medium,
-  .large,
-  .wide,
-  .full {
+  .medium {
     grid-column: span 1;
     grid-row: span 1;
   }
 
+  .large,
+  .wide,
+  .full {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
   .item {
-    min-height: 350px;
+    min-height: 280px;
   }
 
   .full {
