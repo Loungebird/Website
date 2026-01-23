@@ -29,8 +29,9 @@ const featureItems: BentoItem[] = [
   },
   {
     title: "Details, Detailed",
-    description: "Entry requirements, opening hours, and current status",
-    image: "/images/features/cutting-edge.png",
+    description: "Entry Requirements, Opening Hours, and Historic Occupancy",
+    image: "/images/features/details.png",
+    imageDark: "/images/features/details-dark.png",
     size: "medium",
   },
   {
@@ -41,7 +42,7 @@ const featureItems: BentoItem[] = [
     theme: "night",
   },
   {
-    title: "Everyhere, Anytime",
+    title: "Everywhere, Anytime",
     description: "Enjoy Loungebird on iPhone, iPad and Mac",
     image: "/images/features/devices.png",
     imageDark: "/images/features/devices-dark.png",
