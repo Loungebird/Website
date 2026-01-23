@@ -262,6 +262,54 @@
   opacity: 0.7;
 }
 
+/* Spectrum Theme - based on app icon color palette */
+.themeSpectrum {
+  position: relative;
+  overflow: hidden;
+}
+
+.themeSpectrum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 230, 200, 0.4) 0%,
+    rgba(212, 165, 116, 0.35) 12%,
+    rgba(232, 168, 85, 0.3) 24%,
+    rgba(232, 93, 48, 0.25) 36%,
+    rgba(199, 44, 65, 0.2) 48%,
+    rgba(26, 42, 94, 0.2) 60%,
+    rgba(43, 58, 103, 0.25) 72%,
+    rgba(74, 124, 155, 0.3) 84%,
+    rgba(245, 240, 232, 0.35) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.themeSpectrum .content {
+  position: relative;
+  z-index: 2;
+}
+
+.themeSpectrum .imageWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.themeSpectrum .title,
+.themeSpectrum .description {
+  color: var(--color-text-plain);
+}
+
+.themeSpectrum .description {
+  opacity: 0.5;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .grid {
