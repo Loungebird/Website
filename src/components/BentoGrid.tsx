@@ -7,7 +7,7 @@ export interface BentoItem {
   image: string;
   imageDark?: string;
   size: "small" | "medium" | "large" | "wide" | "full";
-  theme?: "sky" | "gold" | "night" | "ios26" | "spectrum";
+  theme?: "gold" | "night" | "ios26" | "spectrum";
 }
 
 interface BentoGridProps {

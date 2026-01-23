@@ -11,9 +11,16 @@
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  transition: box-shadow var(--transition-normal);
+  transition:
+    box-shadow var(--transition-normal),
+    z-index 0s;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+
+.item:hover {
+  z-index: 10;
 }
 
 .content {
@@ -32,6 +39,17 @@
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
   line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .title {
+    color: var(--color-text-white);
+  }
+
+  .description {
+    color: var(--color-text-white);
+    opacity: 0.7;
+  }
 }
 
 .imageWrapper {
@@ -93,11 +111,6 @@
 }
 
 /* Themes */
-/* Sky Theme */
-.themeSky {
-  background: var(--gradient-sky);
-}
-
 /* Gold Theme */
 .themeGold {
   background: var(--gradient-gold);

@@ -3,10 +3,6 @@
   --color-primary: #29317a;
   --color-primary-dark: #c3d6f6;
 
-  --color-accent-gold: #b8a080; /* Champagne gold - luxury accent */
-  --color-accent-gold-light: #d4c4a8;
-  --color-accent-gold-dark: #8c7a5e;
-
   /* Backgrounds */
   --color-background: #ffffff;
   --color-background-dark: #000000;
@@ -33,22 +29,17 @@
   --color-capsule-text: #ffffff;
   --color-capsule-text-dark: #29317a;
 
-  /* Status colors from app */
-  --color-calm: #a8b5a0; /* Green-gray for calm */
-  --color-busy: #b8a080; /* Gold for busy */
-  --color-crowded: #c4a080; /* Darker gold for crowded */
-
   /* Gradients */
   --gradient-sky: linear-gradient(135deg, #f0f5ff 0%, #f1f5ff 100%);
   --gradient-sky-dark: linear-gradient(135deg, #000000 0%, #002035 100%);
   --gradient-gold: linear-gradient(135deg, #f2e9df 0%, #e5d7c2 100%);
   --gradient-gold-dark: linear-gradient(135deg, #635848 0%, #524838 100%);
   --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 252, 0.8) 100%);
-  --gradient-accent: linear-gradient(135deg, #2b3a67 0%, #4a5d8f 100%);
+  --gradient-accent: linear-gradient(45deg, #1b207b 0%, #5379cf 100%);
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.15);
   --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.2);
 

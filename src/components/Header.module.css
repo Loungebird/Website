@@ -61,7 +61,7 @@
 
 .downloadButton {
   padding: var(--space-sm) var(--space-lg);
-  background: var(--gradient-accent);
+  background: var(--color-primary);
   color: var(--color-text-white);
   border-radius: var(--radius-full);
   font-weight: 500;
@@ -74,6 +74,12 @@
 .downloadButton:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+@media (prefers-color-scheme: dark) {
+  .downloadButton {
+    color: var(--color-text-black);
+  }
 }
 
 .mobileMenuButton {
@@ -160,7 +166,7 @@
   display: block;
   margin-top: var(--space-md);
   padding: var(--space-md);
-  background: var(--gradient-accent);
+  background: var(--color-primary);
   color: var(--color-text-white);
   text-align: center;
   border-radius: var(--radius-md);
