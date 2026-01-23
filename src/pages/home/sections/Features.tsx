@@ -22,6 +22,7 @@ const featureItems: BentoItem[] = [
     title: "Widgets",
     description: "Glanceable on your Home and Lock Screen",
     image: "/images/features/widgets.png",
+    imageDark: "/images/features/widgets-dark.png",
     size: "large",
     theme: "sky",
   },
