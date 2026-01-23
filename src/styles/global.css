@@ -88,10 +88,6 @@ p {
   background-clip: text;
 }
 
-.text-gold {
-  color: var(--color-accent-gold);
-}
-
 .capsule {
   display: inline-block;
   padding: var(--space-xs) var(--space-md);
