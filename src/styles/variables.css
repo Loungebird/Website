@@ -42,7 +42,7 @@
   --gradient-sky: linear-gradient(135deg, #f0f5ff 0%, #f1f5ff 100%);
   --gradient-sky-dark: linear-gradient(135deg, #000000 0%, #002035 100%);
   --gradient-gold: linear-gradient(135deg, #f2e9df 0%, #e5d7c2 100%);
-  --gradient-gold-dark: linear-gradient(135deg, #958e87 0%, #6f6556 100%);
+  --gradient-gold-dark: linear-gradient(135deg, #635848 0%, #524838 100%);
   --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 252, 0.8) 100%);
   --gradient-accent: linear-gradient(135deg, #2b3a67 0%, #4a5d8f 100%);
 
