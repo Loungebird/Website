@@ -20,7 +20,7 @@ export default function Header() {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+    <header className={`${styles.header} ${isScrolled || isMobileMenuOpen ? styles.scrolled : ""}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
           <img src="/images/app-icon.png" alt="Loungebird" className={styles.logoIcon} />
@@ -48,11 +48,11 @@ export default function Header() {
 
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div
+          <motion.nav
             className={styles.mobileMenu}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
             <a href="/#features" className={styles.mobileNavLink} onClick={closeMobileMenu}>
@@ -67,7 +67,7 @@ export default function Header() {
             >
               Download on the App Store
             </a>
-          </motion.div>
+          </motion.nav>
         )}
       </AnimatePresence>
     </header>
