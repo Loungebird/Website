@@ -12,11 +12,12 @@ const featureItems: BentoItem[] = [
     theme: "gold",
   },
   {
-    title: "Details, Detailed",
-    description: "Entry requirements, opening hours, and current status",
-    image: "/images/features/cutting-edge.png",
+    title: "Customization",
+    description: "Custom Gauges, App Icons and more",
+    image: "/images/features/customization.png",
     size: "medium",
   },
+
   {
     title: "Widgets",
     description: "Glanceable on your Home and Lock Screen",
@@ -25,7 +26,7 @@ const featureItems: BentoItem[] = [
     theme: "sky",
   },
   {
-    title: "Customize Away",
+    title: "Details, Detailed",
     description: "Entry requirements, opening hours, and current status",
     image: "/images/features/cutting-edge.png",
     size: "medium",
@@ -58,7 +59,7 @@ export default function Features() {
         >
           <span className="capsule">Features</span>
           <h2 className={styles.title}>Tailored Travel</h2>
-          <p className={styles.subtitle}>Effortlessly find the best way to unwind and relax before your flight with Loungebird.</p>
+          <p className={styles.subtitle}>The best way to effortlessly unwind and relax before your flight</p>
         </motion.div>
 
         <BentoGrid items={featureItems} />

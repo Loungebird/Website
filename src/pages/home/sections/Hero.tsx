@@ -18,7 +18,7 @@ export default function Hero() {
           <h1 className={styles.title}>Lounge Smarter at LHR</h1>
 
           <p className={styles.subtitle}>
-            The perfect pre-flight companion for luxurious lounging<br></br>at London Heathrow Terminal 5.
+            The perfect pre-flight companion for luxurious lounging<br></br>at London Heathrow Terminal 5
           </p>
 
           <div className={styles.actions}>
