@@ -43,8 +43,8 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <img src="/images/hero-light.png" alt="Loungebird on iPhone and iPad" className={styles.heroImage} />
-          <img src="/images/hero-dark.png" alt="Loungebird on iPhone and iPad" className={styles.heroImageDark} />
+          <img src="/images/hero-light.webp" alt="Loungebird on iPhone and iPad" className={styles.heroImage} />
+          <img src="/images/hero-dark.webp" alt="Loungebird on iPhone and iPad" className={styles.heroImageDark} />
         </motion.div>
       </div>
 
