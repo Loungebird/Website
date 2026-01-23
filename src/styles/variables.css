@@ -47,10 +47,10 @@
   --gradient-accent: linear-gradient(135deg, #2b3a67 0%, #4a5d8f 100%);
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(43, 58, 103, 0.06);
-  --shadow-md: 0 4px 20px rgba(43, 58, 103, 0.1);
-  --shadow-lg: 0 8px 40px rgba(43, 58, 103, 0.15);
-  --shadow-xl: 0 20px 60px rgba(43, 58, 103, 0.2);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.2);
 
   /* Border Radius */
   --radius-sm: 8px;
