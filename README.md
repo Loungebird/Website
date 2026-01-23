@@ -1,6 +1,8 @@
+![Site](.readme/site.png)
+
 # Loungebird Website
 
-Modern landing page for Loungebird - real-time lounge occupancy insights for London Heathrow Terminal 5.
+Landing page for Loungebird - real-time lounge occupancy insights for London Heathrow Terminal 5.
 
 ## Tech Stack
 
@@ -68,31 +70,3 @@ Or use Docker Compose:
 ```bash
 docker compose up
 ```
-
-## Adding Screenshots
-
-Place your app screenshots in the following directories:
-
-- `public/images/app-icon.png` - App icon
-- `public/images/screenshots/ios/` - iPhone screenshots (1.png, 2.png, etc.)
-- `public/images/screenshots/ipad/` - iPad screenshots
-- `public/images/screenshots/mac/` - Mac screenshots
-- `public/images/promo/` - Marketing images
-
-## Project Structure
-
-```
-src/
-├── components/     # Reusable UI components
-├── pages/          # Page components
-├── styles/         # Global styles and variables
-└── App.tsx         # Main app with routing
-
-public/
-├── images/         # Static images
-└── .well-known/    # Apple App Site Association
-```
-
-## License
-
-Copyright Merrick Sapsford
