@@ -6,7 +6,7 @@ Landing page for Loungebird - real-time lounge occupancy insights for London Hea
 
 ## Tech Stack
 
-- React 18 + TypeScript
+- React 19 + TypeScript
 - Vite
 - Framer Motion (animations)
 - React Router (SPA routing)
@@ -16,7 +16,7 @@ Landing page for Loungebird - real-time lounge occupancy insights for London Hea
 
 ### Prerequisites
 
-- Node.js 20+
+- Node.js 22+ (LTS)
 - npm
 
 ### Install dependencies
@@ -47,11 +47,15 @@ npm run preview
 
 ### GitHub Pages
 
-The site automatically deploys to GitHub Pages on push to the `main` branch via GitHub Actions.
+The site automatically deploys to GitHub Pages when a tag is pushed via GitHub Actions.
 
 1. Enable GitHub Pages in your repository settings
 2. Set the source to "GitHub Actions"
-3. Push to `main` branch
+3. Create and push a tag to trigger deployment:
+   ```bash
+   git tag 1.0.0
+   git push origin 1.0.0
+   ```
 
 ### Docker
 
