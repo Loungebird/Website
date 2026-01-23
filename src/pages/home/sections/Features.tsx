@@ -16,6 +16,7 @@ const featureItems: BentoItem[] = [
     description: "Custom Gauges, App Icons and more",
     image: "/images/features/customization.png",
     size: "medium",
+    theme: "spectrum",
   },
 
   {
