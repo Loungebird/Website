@@ -45,17 +45,9 @@ npm run preview
 
 ## Deployment
 
-### GitHub Pages
+### Vercel
 
-The site automatically deploys to GitHub Pages when a tag is pushed via GitHub Actions.
-
-1. Enable GitHub Pages in your repository settings
-2. Set the source to "GitHub Actions"
-3. Create and push a tag to trigger deployment:
-   ```bash
-   git tag 1.0.0
-   git push origin 1.0.0
-   ```
+The site automatically deploys to Vercel on pushes. Pushes to `main` will deploy to production.
 
 ### Docker
 
