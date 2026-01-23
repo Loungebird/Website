@@ -12,7 +12,7 @@ const featureItems: BentoItem[] = [
     theme: "gold",
   },
   {
-    title: "Customization",
+    title: "Customisable",
     description: "Custom Gauges, App Icons and more",
     image: "/images/features/customization.webp",
     size: "medium",
