@@ -20,31 +20,33 @@ export default function Header() {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
-      <div className={styles.container}>
-        <Link to="/" className={styles.logo}>
-          <img src="/images/app-icon.png" alt="Loungebird" className={styles.logoIcon} />
-          <span className={styles.logoText}>Loungebird</span>
-        </Link>
+    <>
+      <header className={`${styles.header} ${isScrolled || isMobileMenuOpen ? styles.scrolled : ""}`}>
+        <div className={styles.container}>
+          <Link to="/" className={styles.logo}>
+            <img src="/images/app-icon.png" alt="Loungebird" className={styles.logoIcon} />
+            <span className={styles.logoText}>Loungebird</span>
+          </Link>
 
-        <nav className={styles.nav}>
-          <a href="/#features" className={styles.navLink}>
-            Features
-          </a>
-          <a
-            href={links.appStore}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.downloadButton}
-          >
-            Download
-          </a>
-        </nav>
+          <nav className={styles.nav}>
+            <a href="/#features" className={styles.navLink}>
+              Features
+            </a>
+            <a
+              href={links.appStore}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.downloadButton}
+            >
+              Download
+            </a>
+          </nav>
 
-        <button className={styles.mobileMenuButton} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
-          <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ""}`} />
-        </button>
-      </div>
+          <button className={styles.mobileMenuButton} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
+            <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ""}`} />
+          </button>
+        </div>
+      </header>
 
       <AnimatePresence>
         {isMobileMenuOpen && (
@@ -70,6 +72,6 @@ export default function Header() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
