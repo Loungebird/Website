@@ -24,7 +24,7 @@ const featureItems: BentoItem[] = [
     image: "/images/features/widgets.png",
     imageDark: "/images/features/widgets-dark.png",
     size: "large",
-    theme: "sky",
+    theme: "ios26",
   },
   {
     title: "Details, Detailed",

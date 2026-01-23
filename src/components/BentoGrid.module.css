@@ -207,6 +207,61 @@
   opacity: 0.6;
 }
 
+/* iOS 26 Theme - inspired by Apple's iOS 26 "Sky" wallpaper */
+.themeIos26 {
+  background: linear-gradient(160deg, #0a1628 0%, #0d2847 30%, #1a4a6e 60%, #2d7a9c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.themeIos26::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 25% 15%, rgba(30, 100, 160, 0.8) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 60% at 15% 70%, rgba(20, 140, 120, 0.6) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 80% 85%, rgba(30, 120, 180, 0.7) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.themeIos26::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 80% 40% at 50% 0%, rgba(60, 140, 200, 0.5) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 70% 50%, rgba(40, 80, 140, 0.4) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.themeIos26 .content {
+  position: relative;
+  z-index: 2;
+}
+
+.themeIos26 .imageWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.themeIos26 .title,
+.themeIos26 .description {
+  color: var(--color-text-white);
+}
+
+.themeIos26 .description {
+  opacity: 0.7;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .grid {
