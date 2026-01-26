@@ -8,11 +8,11 @@ interface OccupancyCardProps {
 
 const occupancyStates = [
   { value: 23, label: "QUIET" },
-  { value: 45, label: "MODERATE" },
+  { value: 45, label: "CALM" },
   { value: 67, label: "BUSY" },
-  { value: 82, label: "VERY BUSY" },
-  { value: 34, label: "MODERATE" },
-  { value: 91, label: "PACKED" },
+  { value: 82, label: "CROWDED" },
+  { value: 34, label: "CALM" },
+  { value: 91, label: "FULL" },
   { value: 56, label: "BUSY" },
   { value: 12, label: "QUIET" },
 ];
@@ -48,27 +48,19 @@ export default function OccupancyCard({ className }: OccupancyCardProps) {
   }, [currentState.value, springValue]);
 
   // SVG circle calculations
-  const size = 160;
-  const strokeWidth = 10;
+  const size = 180;
+  const strokeWidth = 18;
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
 
   // Transform spring value to stroke offset
-  const strokeDashoffset = useTransform(
-    springValue,
-    (v) => circumference - (v / 100) * circumference
-  );
+  const strokeDashoffset = useTransform(springValue, (v) => circumference - (v / 100) * circumference);
 
   return (
     <div className={`${styles.wrapper} ${className || ""}`}>
       <div className={styles.card}>
         <div className={styles.gaugeContainer}>
-          <svg
-            width={size}
-            height={size}
-            viewBox={`0 0 ${size} ${size}`}
-            className={styles.gauge}
-          >
+          <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className={styles.gauge}>
             {/* Background track */}
             <circle
               cx={size / 2}
