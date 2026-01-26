@@ -17,7 +17,7 @@ Landing page for Loungebird - real-time lounge occupancy insights for London Hea
 ### Prerequisites
 
 - [Volta](https://volta.sh/) (recommended) - automatically uses correct Node.js and pnpm versions
-- Or manually: Node.js 22+ and pnpm 9+
+- Or manually: Node.js 24+ and pnpm 9+
 
 ### Install dependencies
 
