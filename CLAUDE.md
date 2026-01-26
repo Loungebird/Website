@@ -158,10 +158,10 @@ All animations use Framer Motion with consistent easing: `[0.16, 1, 0.3, 1]`
 ## Scripts
 
 ```bash
-npm run dev      # Start dev server
-npm run build    # TypeScript check + Vite build
-npm run lint     # ESLint
-npm run preview  # Preview production build
+pnpm dev      # Start dev server
+pnpm build    # TypeScript check + Vite build
+pnpm lint     # ESLint
+pnpm preview  # Preview production build
 ```
 
 ## Routes

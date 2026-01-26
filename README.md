@@ -16,31 +16,31 @@ Landing page for Loungebird - real-time lounge occupancy insights for London Hea
 
 ### Prerequisites
 
-- Node.js 22+ (LTS)
-- npm
+- [Volta](https://volta.sh/) (recommended) - automatically uses correct Node.js and pnpm versions
+- Or manually: Node.js 22+ and pnpm 9+
 
 ### Install dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Start development server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ### Build for production
 
 ```bash
-npm run build
+pnpm build
 ```
 
 ### Preview production build
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
 ## Deployment
