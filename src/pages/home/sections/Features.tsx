@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import BentoGrid, { type BentoItem } from "../../../components/BentoGrid";
+import OccupancyCard from "../../../components/OccupancyCard";
 import styles from "./Features.module.css";
 
 const featureItems: BentoItem[] = [
   {
     title: "Live Occupancy",
     description: "Real-time occupancy, no reload required",
-    image: "/images/features/live-occupancy.webp",
-    imageDark: "/images/features/live-occupancy-dark.webp",
+    component: <OccupancyCard />,
     size: "medium",
     theme: "gold",
   },
