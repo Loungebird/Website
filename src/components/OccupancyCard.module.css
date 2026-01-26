@@ -1,0 +1,92 @@
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: var(--space-md);
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.card {
+  background: #faf9f7;
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(20%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #2a2a2a;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.gaugeContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauge {
+  display: block;
+}
+
+.track {
+  color: #d4ccc4;
+}
+
+.fill {
+  color: #a89080;
+}
+
+@media (prefers-color-scheme: dark) {
+  .track {
+    color: #4a4540;
+  }
+
+  .fill {
+    color: #d4bfa8;
+  }
+}
+
+.valueContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.percentage {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #1a1a1a;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-color-scheme: dark) {
+  .percentage {
+    color: #ffffff;
+  }
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #9a9088;
+  margin-top: var(--space-xs);
+}
+
+@media (prefers-color-scheme: dark) {
+  .label {
+    color: #8a8078;
+  }
+}

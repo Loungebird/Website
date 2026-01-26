@@ -1,11 +1,13 @@
+import { type ReactNode } from "react";
 import { motion } from "framer-motion";
 import styles from "./BentoGrid.module.css";
 
 export interface BentoItem {
   title: string;
   description: string;
-  image: string;
+  image?: string;
   imageDark?: string;
+  component?: ReactNode;
   size: "small" | "medium" | "large" | "wide" | "full";
   theme?: "gold" | "night" | "ios26" | "spectrum";
 }
@@ -61,8 +63,14 @@ export default function BentoGrid({ items }: BentoGridProps) {
               <p className={styles.description}>{item.description}</p>
             </div>
             <div className={styles.imageWrapper}>
-              <img src={item.image} alt={item.title} className={styles.image} />
-              {item.imageDark && <img src={item.imageDark} alt={item.title} className={styles.imageDark} />}
+              {item.component ? (
+                item.component
+              ) : item.image ? (
+                <>
+                  <img src={item.image} alt={item.title} className={styles.image} />
+                  {item.imageDark && <img src={item.imageDark} alt={item.title} className={styles.imageDark} />}
+                </>
+              ) : null}
             </div>
           </motion.div>
         );
