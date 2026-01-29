@@ -33,14 +33,6 @@ export default function Hero() {
               <img src="/images/appstore/appstore-ios-light.svg" alt="Download on the App Store" className={styles.appStoreBadge} />
               <img src="/images/appstore/appstore-ios-dark.svg" alt="Download on the App Store" className={styles.appStoreBadgeDark} />
             </a>
-            <a href={links.appStore} target="_blank" rel="noopener noreferrer" className={styles.appStoreLink}>
-              <img src="/images/appstore/appstore-macos-light.svg" alt="Download on the Mac App Store" className={styles.appStoreBadge} />
-              <img
-                src="/images/appstore/appstore-macos-dark.svg"
-                alt="Download on the Mac App Store"
-                className={styles.appStoreBadgeDark}
-              />
-            </a>
           </div>
         </motion.div>
 
