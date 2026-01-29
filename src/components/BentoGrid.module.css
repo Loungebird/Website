@@ -343,33 +343,30 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
   }
 
   .small,
-  .medium {
+  .medium,
+  .large,
+  .wide,
+  .full {
     grid-column: span 1;
     grid-row: span 1;
   }
 
-  .large,
-  .wide,
-  .full {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
   .item {
-    min-height: 280px;
+    min-height: 200px;
   }
 
   .full {
-    min-height: 300px;
+    min-height: 240px;
   }
 
   .full .image {
-    max-height: 200px;
+    max-height: 180px;
   }
 }
