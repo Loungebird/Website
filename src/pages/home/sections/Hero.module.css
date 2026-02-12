@@ -132,12 +132,42 @@
   display: none;
 }
 
+.heroImageMobile,
+.heroImageMobileDark {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   .heroImage {
     display: none;
   }
 
   .heroImageDark {
+    display: block;
+  }
+}
+
+/* Mobile: show mobile light image */
+@media (max-width: 640px) {
+  .heroImage,
+  .heroImageDark {
+    display: none;
+  }
+
+  .heroImageMobile {
+    display: block;
+  }
+}
+
+/* Mobile dark mode: show mobile dark image */
+@media (max-width: 640px) and (prefers-color-scheme: dark) {
+  .heroImageMobile {
+    display: none;
+  }
+
+  .heroImageMobileDark {
     display: block;
   }
 }

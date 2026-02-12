@@ -42,8 +42,12 @@ export default function Hero() {
           animate={imagesLoaded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
           transition={{ duration: 2.0, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
+          {/* Desktop images */}
           <img src="/images/hero-light.webp" alt="Loungebird on iPhone and iPad" className={styles.heroImage} onLoad={handleImageLoad} />
           <img src="/images/hero-dark.webp" alt="Loungebird on iPhone and iPad" className={styles.heroImageDark} />
+          {/* Mobile images */}
+          <img src="/images/hero-mobile-light.webp" alt="Loungebird on iPhone" className={styles.heroImageMobile} />
+          <img src="/images/hero-mobile-dark.webp" alt="Loungebird on iPhone" className={styles.heroImageMobileDark} />
         </motion.div>
       </div>
 
