@@ -55,8 +55,6 @@ export default function BentoGrid({ items }: BentoGridProps) {
             key={index}
             className={`${styles.item} ${styles[item.size]} ${themeClass}`}
             variants={itemVariants}
-            whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <div className={styles.content}>
               <h3 className={styles.title}>{item.title}</h3>
