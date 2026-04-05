@@ -8,6 +8,8 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+  background: var(--color-page-edge);
 }
 
 /* Offset anchor links for fixed header */
@@ -16,12 +18,18 @@ html {
 }
 
 body {
+  min-height: 100%;
   font-family: var(--font-family);
-  background-color: var(--color-background);
+  background: var(--color-page-edge);
   color: var(--color-text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root,
+.app {
+  min-height: 100vh;
 }
 
 a {

@@ -8,6 +8,8 @@
   --color-background-dark: #000000;
   --color-surface: #ffffff;
   --color-surface-dark: #161b22;
+  --color-page-edge: #f0f5ff;
+  --color-page-edge-dark: #000000;
 
   /* Header */
   --color-header-scrolled: rgba(255, 255, 255, 0.75);
@@ -94,6 +96,7 @@
     --color-primary: var(--color-primary-dark);
     --color-background: var(--color-background-dark);
     --color-surface: var(--color-surface-dark);
+    --color-page-edge: var(--color-page-edge-dark);
     --color-header-scrolled: var(--color-header-scrolled-dark);
     --color-capsule-background: var(--color-capsule-background-dark);
     --color-capsule-text: var(--color-capsule-text-dark);
