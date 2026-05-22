@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { links } from "../config/links";
 import styles from "./Header.module.css";
@@ -7,6 +7,8 @@ import styles from "./Header.module.css";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,9 +30,11 @@ export default function Header() {
         </Link>
 
         <nav className={styles.nav}>
-          <a href="/#features" className={styles.navLink}>
-            Features
-          </a>
+          {isHome && (
+            <a href="/#features" className={styles.navLink}>
+              Features
+            </a>
+          )}
           <a
             href={links.appStore}
             target="_blank"
@@ -55,9 +59,11 @@ export default function Header() {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <a href="/#features" className={styles.mobileNavLink} onClick={closeMobileMenu}>
-              Features
-            </a>
+            {isHome && (
+              <a href="/#features" className={styles.mobileNavLink} onClick={closeMobileMenu}>
+                Features
+              </a>
+            )}
             <a
               href={links.appStore}
               target="_blank"
