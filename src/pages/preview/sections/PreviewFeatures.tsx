@@ -15,6 +15,7 @@ const previewItems: BentoItem[] = [
     description: "Know before you go. See expected lounge occupancy hours in advance with AI-powered predictions based on real-world usage patterns.",
     size: "large",
     image: "/images/preview/predictive-occupancy.webp",
+    imageDark: "/images/preview/predictive-occupancy-dark.webp",
     theme: "steel",
   },
   {
@@ -22,6 +23,7 @@ const previewItems: BentoItem[] = [
     description: "Decide at a glance. Instantly see whether a lounge is busier or quieter than usual with glanceable occupancy insights.",
     size: "large",
     image: "/images/preview/trends.webp",
+    imageDark: "/images/preview/trends-dark.webp",
     theme: "gold",
   }
 ];
