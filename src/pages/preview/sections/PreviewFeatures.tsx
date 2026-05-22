@@ -5,27 +5,28 @@ import styles from "./PreviewFeatures.module.css";
 const previewItems: BentoItem[] = [
   {
     title: "Autopilot",
-    description: "Your lounge concierge. Find the best lounge for your journey, tailored in real time",
+    description: "Your lounge concierge. Find the best lounge for your journey based on your status and travel habits. All in real-time.",
     size: "large",
     image: "/images/preview/autopilot.webp",
-    theme: "ios26",
+    theme: "midnight",
   },
   {
     title: "Predictive Occupancy",
-    description: "Something new is on its way",
-    size: "medium",
-    theme: "gold",
+    description: "Know before you go. See expected lounge occupancy hours in advance with AI-powered predictions built from real-world usage patterns.",
+    size: "large",
+    image: "/images/preview/predictive-occupancy.webp",
+    theme: "steel",
   },
   {
     title: "Occupancy Forecast",
     description: "A fresh new experience",
-    size: "medium",
+    size: "large",
     theme: "spectrum",
   },
   {
     title: "Occupancy Trends",
     description: "More ways to stay informed",
-    size: "medium",
+    size: "large",
     theme: "night",
   },
   {

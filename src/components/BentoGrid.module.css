@@ -275,6 +275,51 @@
   opacity: 0.7;
 }
 
+/* Steel Theme - light icy blue-steel, mirrors the occupancy chart palette */
+.themeSteel {
+  background:
+    radial-gradient(60% 50% at 98% 4%,   rgba(160, 185, 215, 0.55) 0%, transparent 65%),
+    radial-gradient(115% 90% at 95% 96%, rgba(58, 80, 128, 0.12) 0%, transparent 75%),
+    linear-gradient(135deg, #eef4fb 0%, #cddaec 100%);
+}
+
+.themeSteel .title {
+  color: #142a44;
+}
+
+.themeSteel .description {
+  color: #142a44;
+  opacity: 0.65;
+}
+
+/* Midnight Theme - Autopilot unconfigured dark mode palette */
+.themeMidnight {
+  background:
+    radial-gradient(95% 80% at 4% 4%,    rgba(44, 94, 148, 0.40) 0%, transparent 65%),
+    radial-gradient(65% 55% at 100% 2%,  rgba(82, 156, 204, 0.50) 0%, transparent 65%),
+    radial-gradient(115% 90% at 95% 96%, rgba(10, 22, 44, 0.40) 0%, transparent 75%),
+    linear-gradient(135deg, #14243c 0%, #060c1c 100%);
+}
+
+.themeMidnight .content {
+  position: relative;
+  z-index: 2;
+}
+
+.themeMidnight .imageWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.themeMidnight .title,
+.themeMidnight .description {
+  color: #eaf1fa;
+}
+
+.themeMidnight .description {
+  opacity: 0.65;
+}
+
 /* Spectrum Theme - based on app icon color palette */
 .themeSpectrum {
   position: relative;
