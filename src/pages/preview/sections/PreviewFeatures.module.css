@@ -1,5 +1,5 @@
 .preview {
-  padding: var(--space-3xl) 0;
+  padding: var(--space-4xl) 0 var(--space-3xl);
   background: var(--color-background);
   min-height: calc(100vh - var(--header-height));
 }

@@ -4,25 +4,26 @@ import styles from "./PreviewFeatures.module.css";
 
 const previewItems: BentoItem[] = [
   {
-    title: "Coming Soon",
+    title: "Autopilot",
+    description: "Your lounge concierge. Find the best lounge for your journey, tailored in real time",
+    size: "large",
+    image: "/images/preview/autopilot.webp",
+    theme: "ios26",
+  },
+  {
+    title: "Predictive Occupancy",
     description: "Something new is on its way",
     size: "medium",
     theme: "gold",
   },
   {
-    title: "Coming Soon",
-    description: "Something big is in the works",
-    size: "large",
-    theme: "ios26",
-  },
-  {
-    title: "Coming Soon",
+    title: "Occupancy Forecast",
     description: "A fresh new experience",
     size: "medium",
     theme: "spectrum",
   },
   {
-    title: "Coming Soon",
+    title: "Occupancy Trends",
     description: "More ways to stay informed",
     size: "medium",
     theme: "night",
@@ -31,12 +32,7 @@ const previewItems: BentoItem[] = [
     title: "Coming Soon",
     description: "Even more to look forward to",
     size: "medium",
-  },
-  {
-    title: "And Much More",
-    description: "We're always working to make Loungebird better",
-    size: "full",
-  },
+  }
 ];
 
 export default function PreviewFeatures() {
