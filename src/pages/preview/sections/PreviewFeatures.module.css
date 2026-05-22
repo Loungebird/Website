@@ -27,3 +27,11 @@
   font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
 }
+
+.disclaimer {
+  margin-top: var(--space-3xl);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}

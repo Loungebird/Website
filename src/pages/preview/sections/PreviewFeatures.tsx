@@ -12,27 +12,17 @@ const previewItems: BentoItem[] = [
   },
   {
     title: "Predictive Occupancy",
-    description: "Know before you go. See expected lounge occupancy hours in advance with AI-powered predictions built from real-world usage patterns.",
+    description: "Know before you go. See expected lounge occupancy hours in advance with AI-powered predictions based on real-world usage patterns.",
     size: "large",
     image: "/images/preview/predictive-occupancy.webp",
     theme: "steel",
   },
   {
-    title: "Occupancy Forecast",
-    description: "A fresh new experience",
-    size: "large",
-    theme: "spectrum",
-  },
-  {
     title: "Occupancy Trends",
-    description: "More ways to stay informed",
+    description: "Decide at a glance. Instantly see whether a lounge is busier or quieter than usual with glanceable occupancy insights.",
     size: "large",
-    theme: "night",
-  },
-  {
-    title: "Coming Soon",
-    description: "Even more to look forward to",
-    size: "medium",
+    image: "/images/preview/trends.webp",
+    theme: "gold",
   }
 ];
 
@@ -53,6 +43,10 @@ export default function PreviewFeatures() {
         </motion.div>
 
         <BentoGrid items={previewItems} />
+
+        <p className={styles.disclaimer}>
+          All features shown are pre-release software and subject to change. Availability and final design may differ from what is shown here.
+        </p>
       </div>
     </section>
   );
