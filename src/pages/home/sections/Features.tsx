@@ -17,14 +17,12 @@ const featureItems: BentoItem[] = [
     description: "Real-time occupancy, no reload required",
     component: <OccupancyCard />,
     size: "medium",
-    theme: "gold",
   },
   {
-    title: "Customisable",
+    title: "Predictive Fallback",
     description: "Custom Gauges, App Icons and more",
     image: "/images/features/customization.webp",
     size: "medium",
-    theme: "spectrum",
   },
   {
     title: "Occupancy Intelligence",
@@ -39,14 +37,12 @@ const featureItems: BentoItem[] = [
     description: "Support for the latest system updates and features",
     image: "/images/features/cutting-edge.webp",
     size: "medium",
-    theme: "night",
   },
   {
-    title: "Predictive Fallback",
+    title: "Customisable",
     description: "Custom Gauges, App Icons and more",
     image: "/images/features/customization.webp",
     size: "medium",
-    theme: "spectrum",
   },
   {
     title: "Widgets",
