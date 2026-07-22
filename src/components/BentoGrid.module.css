@@ -415,6 +415,55 @@
   }
 }
 
+/* Insight Theme - Occupancy Intelligence: deep indigo-teal with a radar/pulse motif */
+.themeInsight {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #0b1626 0%, #101f34 45%, #14283f 100%);
+}
+
+.themeInsight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 70% at 88% 8%, rgba(110, 160, 185, 0.42) 0%, rgba(110, 160, 185, 0.15) 35%, transparent 70%),
+    radial-gradient(ellipse 70% 65% at 8% 95%, rgba(55, 140, 135, 0.24) 0%, rgba(55, 140, 135, 0.09) 35%, transparent 72%),
+    radial-gradient(ellipse 55% 48% at 55% 55%, rgba(80, 110, 160, 0.19) 0%, transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.themeInsight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 48% 42% at 14% 18%, rgba(90, 220, 200, 0.4) 0%, rgba(90, 220, 200, 0.13) 40%, transparent 78%),
+    radial-gradient(ellipse 58% 52% at 72% 78%, rgba(150, 180, 225, 0.3) 0%, rgba(150, 180, 225, 0.1) 40%, transparent 78%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.themeInsight .content {
+  position: relative;
+  z-index: 2;
+}
+
+.themeInsight .imageWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.themeInsight .title,
+.themeInsight .description {
+  color: var(--color-text-white);
+}
+
+.themeInsight .description {
+  opacity: 0.75;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .grid {
