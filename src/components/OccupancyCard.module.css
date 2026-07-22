@@ -10,17 +10,17 @@
 }
 
 .card {
-  background: #faf9f7;
+  background: #f7f8fa;
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
   padding-bottom: var(--space-2xl);
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(20%);
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    background: #2a2a2a;
+    background: #0c0d10;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
   }
 }
@@ -37,20 +37,20 @@
 }
 
 .track {
-  color: #d4ccc4;
+  color: #d7dde6;
 }
 
 .fill {
-  color: #a89080;
+  color: #4d6483;
 }
 
 @media (prefers-color-scheme: dark) {
   .track {
-    color: #4a4540;
+    color: #4b515c;
   }
 
   .fill {
-    color: #d4bfa8;
+    color: #a9bee2;
   }
 }
 
@@ -73,7 +73,7 @@
 
 @media (prefers-color-scheme: dark) {
   .percentage {
-    color: #f5f5f5;
+    color: #ffffff;
   }
 }
 
@@ -81,12 +81,12 @@
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: #b0a090;
+  color: #29317a;
   margin-top: 0.25em;
 }
 
 @media (prefers-color-scheme: dark) {
   .label {
-    color: #908880;
+    color: #9db0d6;
   }
 }
