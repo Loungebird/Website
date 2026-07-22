@@ -5,6 +5,14 @@ import styles from "./Features.module.css";
 
 const featureItems: BentoItem[] = [
   {
+    title: "Lounge on Autopilot",
+    description: "Your lounge concierge. Autopilot automatically finds the best lounge for your journey, tailored in real-time.",
+    image: "/images/features/autopilot.webp",
+    imageDark: "/images/features/autopilot-dark.webp",
+    size: "large",
+    theme: "autopilot",
+  },
+  {
     title: "Live Occupancy",
     description: "Real-time occupancy, no reload required",
     component: <OccupancyCard />,
@@ -18,7 +26,6 @@ const featureItems: BentoItem[] = [
     size: "medium",
     theme: "spectrum",
   },
-
   {
     title: "Widgets",
     description: "Glanceable on your Home and Lock Screen",
@@ -46,7 +53,7 @@ const featureItems: BentoItem[] = [
     description: "Enjoy Loungebird on iPhone, iPad and Mac",
     image: "/images/features/devices.webp",
     imageDark: "/images/features/devices-dark.webp",
-    size: "full",
+    size: "large",
   },
 ];
 
