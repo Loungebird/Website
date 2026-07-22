@@ -43,6 +43,9 @@ export default function Footer() {
 
             <div className={styles.linkGroup}>
               <h4 className={styles.linkGroupTitle}>Contact</h4>
+              <Link to="/press" className={styles.link}>
+                Press
+              </Link>
               <a href="mailto:info@loungebird.app" className={styles.link}>
                 info@loungebird.app
               </a>

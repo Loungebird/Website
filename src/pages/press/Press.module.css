@@ -1,0 +1,61 @@
+.assetGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 640px) {
+  .assetGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.assetCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-page-edge);
+  border-radius: var(--radius-md);
+  text-decoration: none !important;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.assetCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  opacity: 1 !important;
+}
+
+.assetIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.assetInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.assetName {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.assetMeta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.contactCard {
+  padding: var(--space-lg);
+  background: var(--color-page-edge);
+  border-radius: var(--radius-md);
+}
