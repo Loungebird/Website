@@ -19,7 +19,7 @@ const featureItems: BentoItem[] = [
     size: "medium",
   },
   {
-    title: "Predictive Fallback",
+    title: "Customisable",
     description: "Custom Gauges, App Icons and more",
     image: "/images/features/customization.webp",
     size: "medium",
@@ -39,9 +39,10 @@ const featureItems: BentoItem[] = [
     size: "medium",
   },
   {
-    title: "Customisable",
-    description: "Custom Gauges, App Icons and more",
-    image: "/images/features/customization.webp",
+    title: "Always Informed",
+    description: "Intelligent estimates fill the gaps when live data is unavailable.",
+    image: "/images/features/fallback-occupancy.webp",
+    imageDark: "/images/features/fallback-occupancy-dark.webp",
     size: "medium",
   },
   {
