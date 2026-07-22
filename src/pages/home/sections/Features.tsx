@@ -5,7 +5,7 @@ import styles from "./Features.module.css";
 
 const featureItems: BentoItem[] = [
   {
-    title: "Lounge on Autopilot",
+    title: "Lounge Autopilot",
     description: "Your lounge concierge. Autopilot automatically finds the best lounge for your journey, tailored in real-time.",
     image: "/images/features/autopilot.webp",
     imageDark: "/images/features/autopilot-dark.webp",
@@ -33,13 +33,6 @@ const featureItems: BentoItem[] = [
     imageDark: "/images/features/widgets-dark.webp",
     size: "large",
     theme: "ios26",
-  },
-  {
-    title: "Details, Detailed",
-    description: "Entry Requirements, Opening Hours, and Historic Occupancy",
-    image: "/images/features/details.webp",
-    imageDark: "/images/features/details-dark.webp",
-    size: "medium",
   },
   {
     title: "Cutting Edge",
