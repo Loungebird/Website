@@ -510,4 +510,8 @@
   .full .image {
     max-height: 180px;
   }
+
+  .hideOnSingleColumn {
+    display: none;
+  }
 }

@@ -23,6 +23,7 @@ const featureItems: BentoItem[] = [
     description: "Custom Gauges, App Icons and more",
     image: "/images/features/customization.webp",
     size: "medium",
+    hideOnSingleColumn: true,
   },
   {
     title: "Occupancy Intelligence",
@@ -37,6 +38,7 @@ const featureItems: BentoItem[] = [
     description: "Support for the latest system updates and features",
     image: "/images/features/cutting-edge.webp",
     size: "medium",
+    hideOnSingleColumn: true,
   },
   {
     title: "Always Informed",
@@ -44,6 +46,7 @@ const featureItems: BentoItem[] = [
     image: "/images/features/fallback-occupancy.webp",
     imageDark: "/images/features/fallback-occupancy-dark.webp",
     size: "medium",
+    hideOnSingleColumn: true,
   },
   {
     title: "Widgets",
