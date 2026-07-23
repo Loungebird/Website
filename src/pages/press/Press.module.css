@@ -54,6 +54,19 @@
   color: var(--color-text-muted);
 }
 
+.assetDownloadIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.assetCard:hover .assetDownloadIcon {
+  color: var(--color-text-primary);
+}
+
 .contactCard {
   padding: var(--space-lg);
   background: var(--color-page-edge);
