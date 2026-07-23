@@ -47,7 +47,7 @@ export default function Footer() {
                 Press
               </Link>
               <a href="mailto:info@loungebird.app" className={styles.link}>
-                info@loungebird.app
+                Get in touch
               </a>
             </div>
           </div>

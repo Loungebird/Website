@@ -38,7 +38,7 @@ export default function Press() {
             Whether planning ahead or already at the airport, Loungebird helps travellers get the best possible pre-departure experience.
           </p>
 
-          <h2>Assets</h2>
+          <h2>Press Kit</h2>
           <p>Featuring high-resolution screenshots and iconography.</p>
           <div className={styles.assetGrid}>
             <a href="https://assets.loungebird.app/press/v2/presskit.zip" download className={styles.assetCard}>
