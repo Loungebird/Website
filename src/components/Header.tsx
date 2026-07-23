@@ -46,7 +46,11 @@ export default function Header() {
         </nav>
 
         <button className={styles.mobileMenuButton} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
-          <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ""}`} />
+          <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.open : ""}`}>
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+            <span className={styles.hamburgerLine} />
+          </span>
         </button>
       </div>
 
