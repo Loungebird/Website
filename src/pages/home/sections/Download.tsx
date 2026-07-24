@@ -2,14 +2,19 @@ import { motion } from "framer-motion";
 import { links } from "../../../config/links";
 import styles from "./Download.module.css";
 
-export default function Download() {
+interface DownloadProps {
+  shouldAnimate: boolean;
+}
+
+export default function Download({ shouldAnimate }: DownloadProps) {
   return (
     <section className={styles.download}>
       <div className={styles.container}>
         <motion.div
           className={styles.content}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
+          whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+          animate={shouldAnimate ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >

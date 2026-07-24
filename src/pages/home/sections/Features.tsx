@@ -65,14 +65,19 @@ const featureItems: BentoItem[] = [
   },
 ];
 
-export default function Features() {
+interface FeaturesProps {
+  shouldAnimate: boolean;
+}
+
+export default function Features({ shouldAnimate }: FeaturesProps) {
   return (
     <section id="features" className={styles.features}>
       <div className={styles.container}>
         <motion.div
           className={styles.header}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={shouldAnimate ? { opacity: 0, y: 20 } : false}
+          whileInView={shouldAnimate ? { opacity: 1, y: 0 } : undefined}
+          animate={shouldAnimate ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
@@ -81,7 +86,7 @@ export default function Features() {
           <p className={styles.subtitle}>The best way to effortlessly unwind and relax before your flight</p>
         </motion.div>
 
-        <BentoGrid items={featureItems} />
+        <BentoGrid items={featureItems} shouldAnimate={shouldAnimate} />
       </div>
     </section>
   );

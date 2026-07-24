@@ -3,8 +3,12 @@ import { motion } from "framer-motion";
 import { links } from "../../../config/links";
 import styles from "./Hero.module.css";
 
-export default function Hero() {
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+interface HeroProps {
+  shouldAnimate: boolean;
+}
+
+export default function Hero({ shouldAnimate }: HeroProps) {
+  const [imagesLoaded, setImagesLoaded] = useState(!shouldAnimate);
 
   const handleImageLoad = () => {
     setImagesLoaded(true);
@@ -18,7 +22,7 @@ export default function Hero() {
       <div className={styles.container}>
         <motion.div
           className={styles.content}
-          initial={{ opacity: 0, y: 20 }}
+          initial={shouldAnimate ? { opacity: 0, y: 20 } : false}
           animate={imagesLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 1.5, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
@@ -36,7 +40,7 @@ export default function Hero() {
 
         <motion.div
           className={styles.deviceShowcase}
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={shouldAnimate ? { opacity: 0, scale: 0.8 } : false}
           animate={imagesLoaded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
           transition={{ duration: 2.0, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
@@ -51,7 +55,7 @@ export default function Hero() {
 
       <motion.div
         className={styles.scrollIndicator}
-        initial={{ opacity: 0 }}
+        initial={shouldAnimate ? { opacity: 0 } : false}
         animate={imagesLoaded ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.6, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
       >

@@ -15,6 +15,7 @@ export interface BentoItem {
 
 interface BentoGridProps {
   items: BentoItem[];
+  shouldAnimate?: boolean;
 }
 
 const containerVariants = {
@@ -40,13 +41,14 @@ const itemVariants = {
   },
 };
 
-export default function BentoGrid({ items }: BentoGridProps) {
+export default function BentoGrid({ items, shouldAnimate = true }: BentoGridProps) {
   return (
     <motion.div
       className={styles.grid}
       variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
+      initial={shouldAnimate ? "hidden" : false}
+      whileInView={shouldAnimate ? "visible" : undefined}
+      animate={shouldAnimate ? undefined : "visible"}
       viewport={{ once: true, margin: "-100px" }}
     >
       {items.map((item, index) => {
