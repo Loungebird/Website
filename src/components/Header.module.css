@@ -93,6 +93,14 @@
 
 .hamburger {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 16px;
+}
+
+.hamburgerLine {
   width: 24px;
   height: 2px;
   background: var(--color-primary);
@@ -100,37 +108,16 @@
   transition: all var(--transition-fast);
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background: var(--color-primary);
-  border-radius: 2px;
-  transition: all var(--transition-fast);
+.hamburger.open .hamburgerLine:first-child {
+  transform: translateY(7px) rotate(45deg);
 }
 
-.hamburger::before {
-  top: -8px;
+.hamburger.open .hamburgerLine:nth-child(2) {
+  opacity: 0;
 }
 
-.hamburger::after {
-  top: 8px;
-}
-
-.hamburger.open {
-  background: transparent;
-}
-
-.hamburger.open::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.hamburger.open::after {
-  top: 0;
-  transform: rotate(-45deg);
+.hamburger.open .hamburgerLine:last-child {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .mobileMenu {

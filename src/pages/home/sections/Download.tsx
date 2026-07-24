@@ -17,7 +17,7 @@ export default function Download() {
             <img src="/images/app-icon.png" alt="Loungebird" className={styles.appIcon} />
           </div>
 
-          <h2 className={styles.title}>Ready to Lounge?</h2>
+          <h2 className={styles.title}>Ready for Takeoff?</h2>
 
           <p className={styles.subtitle}>Download Loungebird free on the App Store. Available for iPhone, iPad, and Mac.</p>
 

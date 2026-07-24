@@ -14,7 +14,7 @@ export default function Footer() {
               <img src="/images/app-icon.png" alt="Loungebird" className={styles.logoIcon} />
               <span className={styles.logoText}>Loungebird</span>
             </Link>
-            <p className={styles.tagline}>Real-time lounge occupancy for London Heathrow Terminal 5.</p>
+            <p className={styles.tagline}>Lounge Intelligence for London Heathrow Terminal 5.</p>
           </div>
 
           <div className={styles.links}>
@@ -43,8 +43,11 @@ export default function Footer() {
 
             <div className={styles.linkGroup}>
               <h4 className={styles.linkGroupTitle}>Contact</h4>
+              <Link to="/press" className={styles.link}>
+                Press
+              </Link>
               <a href="mailto:info@loungebird.app" className={styles.link}>
-                info@loungebird.app
+                Get in touch
               </a>
             </div>
           </div>

@@ -9,7 +9,8 @@ export interface BentoItem {
   imageDark?: string;
   component?: ReactNode;
   size: "small" | "medium" | "large" | "wide" | "full";
-  theme?: "gold" | "night" | "ios26" | "spectrum" | "midnight" | "steel";
+  theme?: "gold" | "night" | "ios26" | "spectrum" | "midnight" | "steel" | "autopilot" | "insight";
+  hideOnSingleColumn?: boolean;
 }
 
 interface BentoGridProps {
@@ -50,10 +51,11 @@ export default function BentoGrid({ items }: BentoGridProps) {
     >
       {items.map((item, index) => {
         const themeClass = item.theme ? styles[`theme${item.theme.charAt(0).toUpperCase()}${item.theme.slice(1)}`] : "";
+        const hideSingleColumnClass = item.hideOnSingleColumn ? styles.hideOnSingleColumn : "";
         return (
           <motion.div
             key={index}
-            className={`${styles.item} ${styles[item.size]} ${themeClass}`}
+            className={`${styles.item} ${styles[item.size]} ${themeClass} ${hideSingleColumnClass}`}
             variants={itemVariants}
           >
             <div className={styles.content}>
