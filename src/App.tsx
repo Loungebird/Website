@@ -7,6 +7,7 @@ import Terms from "./pages/legal/Terms";
 import Privacy from "./pages/legal/Privacy";
 import Disclaimer from "./pages/legal/Disclaimer";
 import Press from "./pages/press/Press";
+import NotFound from "./pages/not-found/NotFound";
 import "./styles/global.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/press" element={<Press />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
