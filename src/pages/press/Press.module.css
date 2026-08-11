@@ -31,10 +31,7 @@
 .assetIcon {
   width: 56px;
   height: 56px;
-  border-radius: var(--radius-sm);
-  object-fit: cover;
   flex-shrink: 0;
-  box-shadow: var(--shadow-sm);
 }
 
 .assetInfo {

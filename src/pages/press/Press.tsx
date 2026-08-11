@@ -30,18 +30,17 @@ export default function Press() {
         <div className={legalStyles.container}>
           <h2>About Loungebird</h2>
           <p>
-            Loungebird is the perfect pre-flight companion for travellers visiting the lounges at London Heathrow Terminal 5. 
-            Designed to make every moment before departure more enjoyable; it brings useful lounge information together in 
-            a simple, beautifully crafted experience.
+            Loungebird is the perfect pre-flight companion for visiting the lounges at London Heathrow Terminal 5. 
+            It brings together useful lounge information, occupancy insights and personalised guidance in one simple app.
           </p>
           <p>
-            Whether planning ahead or already at the airport, Loungebird helps travellers get the best possible pre-departure experience.
+            Whether planning ahead or already at the airport, Loungebird helps travellers choose where to spend their time before departure.
           </p>
 
           <h2>Press Kit</h2>
           <p>Featuring high-resolution screenshots and iconography.</p>
           <div className={styles.assetGrid}>
-            <a href="https://assets.loungebird.app/press/v2/presskit.zip" download className={styles.assetCard}>
+            <a href="https://assets.loungebird.app/press/v3/presskit.zip" download className={styles.assetCard}>
               <img src="/images/app-icon.png" alt="Loungebird app icon" className={styles.assetIcon} />
               <span className={styles.assetInfo}>
                 <span className={styles.assetName}>Press Kit</span>
