@@ -41,7 +41,7 @@ export default function Press() {
           <h2>Press Kit</h2>
           <p>Featuring high-resolution screenshots and iconography.</p>
           <div className={styles.assetGrid}>
-            <a href="https://assets.loungebird.app/press/v2/presskit.zip" download className={styles.assetCard}>
+            <a href="https://assets.loungebird.app/press/v3/presskit.zip" download className={styles.assetCard}>
               <img src="/images/app-icon.png" alt="Loungebird app icon" className={styles.assetIcon} />
               <span className={styles.assetInfo}>
                 <span className={styles.assetName}>Press Kit</span>
