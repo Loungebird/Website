@@ -9,7 +9,7 @@ export interface BentoItem {
   imageDark?: string;
   component?: ReactNode;
   size: "small" | "medium" | "large" | "wide" | "full";
-  theme?: "gold" | "night" | "ios26" | "spectrum" | "midnight" | "steel" | "autopilot" | "insight";
+  theme?: "gold" | "night" | "ios26" | "ios27" | "spectrum" | "midnight" | "steel" | "autopilot" | "insight";
   hideOnSingleColumn?: boolean;
 }
 

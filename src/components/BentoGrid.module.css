@@ -275,6 +275,53 @@
   opacity: 0.7;
 }
 
+/* iOS 27 Theme - mirrors the default iOS 27 system wallpaper's bronze/champagne swirl, light + dark */
+.themeIos27 {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(70% 55% at 92% 0%, rgba(255, 220, 180, 0.6) 0%, transparent 65%),
+    radial-gradient(90% 75% at 0% 100%, rgba(120, 88, 56, 0.35) 0%, transparent 70%),
+    linear-gradient(135deg, #f5ecdf 0%, #ddc6a4 50%, #a9835f 100%);
+}
+
+.themeIos27 .content {
+  position: relative;
+  z-index: 2;
+}
+
+.themeIos27 .imageWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.themeIos27 .title {
+  color: #3a2a1c;
+}
+
+.themeIos27 .description {
+  color: #5c4632;
+  opacity: 0.85;
+}
+
+@media (prefers-color-scheme: dark) {
+  .themeIos27 {
+    background:
+      radial-gradient(75% 60% at 88% 0%, rgba(96, 108, 160, 0.45) 0%, transparent 65%),
+      radial-gradient(70% 60% at 8% 100%, rgba(40, 96, 88, 0.32) 0%, transparent 70%),
+      linear-gradient(150deg, #11131e 0%, #1c2038 45%, #2b3050 100%);
+  }
+
+  .themeIos27 .title {
+    color: var(--color-text-white);
+  }
+
+  .themeIos27 .description {
+    color: #c3c8dc;
+    opacity: 0.85;
+  }
+}
+
 /* Steel Theme - light icy blue-steel, mirrors the occupancy chart palette */
 .themeSteel {
   background:

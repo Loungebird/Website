@@ -31,7 +31,7 @@ const featureItems: BentoItem[] = [
     image: "/images/features/occupancy-intel.webp",
     imageDark: "/images/features/occupancy-intel-dark.webp",
     size: "large",
-    theme: "insight",
+    theme: "ios26",
   },
   {
     title: "Cutting Edge",
@@ -54,7 +54,7 @@ const featureItems: BentoItem[] = [
     image: "/images/features/widgets.webp",
     imageDark: "/images/features/widgets-dark.webp",
     size: "large",
-    theme: "ios26",
+    theme: "ios27",
   },
   {
     title: "All your devices",
